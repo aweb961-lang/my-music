@@ -1,0 +1,44 @@
+# source: YouTube Music "Worship", read 2026-11-16; default genre worship
+@playlist Worship worship
+Lay Me Down|Chris Tomlin
+My Lighthouse|Rend Collective
+demons|Josiah Queen, Julia Poe
+The Prodigal|Josiah Queen
+WASHED|ELEVATION RHYTHM
+I Saw The Light (feat. Sonya Isaacs)|Josh Turner
+In Christ Alone (Live)|Passion, Kristian Stanfill
+Christ And Christ Crucified (Live)|Lindy Cofer, Circuit Rider Music, Mitch Wong
+REASONS (Live)|The Belonging Co, Mitch Wong
+# source: YouTube Music "running"; default genre pop
+@playlist running pop
+Ignite (feat. Seungri)|K-391
+Paradise|Coldplay
+I Bet My Life|Imagine Dragons
+Hymn for the Weekend|Coldplay
+Counting Stars|OneRepublic
+Monster|Imagine Dragons
+S&M|Rihanna
+Back Again (feat. RHEA)|Bryan V
+Disturbia|Rihanna
+Nevada (feat. Cozi Zuehlsdorff)|Vicetone
+The Spectre|Alan Walker
+Poker Face|Lady Gaga
+Darkside|Alan Walker, Au/Ra, Tomine Harket
+Just Dance (feat. Colby O'Donis)|Lady Gaga
+Easy On My Heart|Gabry Ponte
+# source: YouTube Music "Liked Music"; default genre pop
+@playlist Liked pop
+River|Myles Smith
+Bad Dreams|Teddy Swims
+Until The End|Breaking Benjamin
+Ignite (feat. Seungri)|K-391
+45|Shinedown
+Killing Me Slowly|Bad Wolves
+Whatever It Takes|Hollywood Undead
+Someday|OneRepublic
+hot girl bummer|blackbear
+Born a Rockstar|NEFFEX
+Asking for It|Shinedown
+Come & Go (feat. Marshmello)|Juice WRLD
+Hymn for the Weekend (feat. Beyoncé)|Coldplay
+A**HOLE|Vin Jay

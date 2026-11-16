@@ -1,0 +1,3554 @@
+{
+ "genres": [
+  "country",
+  "pop",
+  "rock",
+  "worship",
+  "hiphop",
+  "electronic"
+ ],
+ "tracks": [
+  {
+   "id": "cigarettesmoke--andrewhyatt",
+   "title": "Cigarette Smoke",
+   "artist": "Andrew Hyatt",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "yourtown--antwanetyler",
+   "title": "Your Town",
+   "artist": "Antwane Tyler",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "everythingbutok--austinsnell",
+   "title": "Everything But Ok",
+   "artist": "Austin Snell",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "thisyoung--bengallaher",
+   "title": "This Young",
+   "artist": "Ben Gallaher",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "heygirl--billycurrington",
+   "title": "Hey Girl",
+   "artist": "Billy Currington",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "peoplearecrazy--billycurrington",
+   "title": "People Are Crazy",
+   "artist": "Billy Currington",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "gooddirections--billycurrington",
+   "title": "Good Directions",
+   "artist": "Billy Currington",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "dontit--billycurrington",
+   "title": "Don't It",
+   "artist": "Billy Currington",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "itdonthurtlikeitusedto--billycurrington",
+   "title": "It Don't Hurt Like It Used To",
+   "artist": "Billy Currington",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "surebecoolifyoudid--blakeshelton",
+   "title": "Sure Be Cool If You Did",
+   "artist": "Blake Shelton",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "mudonthetires--bradpaisley",
+   "title": "Mud on the Tires",
+   "artist": "Brad Paisley",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "bottomsup--brantleygilbert",
+   "title": "Bottoms Up",
+   "artist": "Brantley Gilbert",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "onehellofanamen--brantleygilbert",
+   "title": "One Hell Of An Amen",
+   "artist": "Brantley Gilbert",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "drunkonyourlove--bretteldredge",
+   "title": "Drunk on Your Love",
+   "artist": "Brett Eldredge",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "driverdrive--brookelee",
+   "title": "Driver Drive",
+   "artist": "Brooke Lee",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "aintnothingboutyou--brooksdunn",
+   "title": "Ain't Nothing 'Bout You",
+   "artist": "Brooks & Dunn",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "stayalittlelonger--brothersosborne",
+   "title": "Stay A Little Longer",
+   "artist": "Brothers Osborne",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "weride--bryanmartin",
+   "title": "We Ride",
+   "artist": "Bryan Martin",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "throwndarts--canaansmith",
+   "title": "Throw'n Darts",
+   "artist": "Canaan Smith",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "cowboycasanova--carrieunderwood",
+   "title": "Cowboy Casanova",
+   "artist": "Carrie Underwood",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "shedoes--caseybarnes",
+   "title": "SHE DOES",
+   "artist": "Casey Barnes",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "littlebitofyou--chasebryant",
+   "title": "Little Bit of You",
+   "artist": "Chase Bryant",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "wayfarerweather--chasebryant",
+   "title": "Wayfarer Weather",
+   "artist": "Chase Bryant",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "hellifiknow--chasebryant",
+   "title": "Hell If I Know",
+   "artist": "Chase Bryant",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "parachute--chrisstapleton",
+   "title": "Parachute",
+   "artist": "Chris Stapleton",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "awnaw--chrisyoung",
+   "title": "Aw Naw",
+   "artist": "Chris Young",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "voices--chrisyoung",
+   "title": "Voices",
+   "artist": "Chris Young",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "lonelyeyes--chrisyoung",
+   "title": "Lonely Eyes",
+   "artist": "Chris Young",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "whoiamwithyou--chrisyoung",
+   "title": "Who I Am With You",
+   "artist": "Chris Young",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "thinkofyou--chrisyoung",
+   "title": "Think of You",
+   "artist": "Chris Young, Cassadee Pope",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "shewontbelonelylong--claywalker",
+   "title": "She Won't Be Lonely Long",
+   "artist": "Clay Walker",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "loveyoutoolate--coleswindell",
+   "title": "Love You Too Late",
+   "artist": "Cole Swindell",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "chillinit--coleswindell",
+   "title": "Chillin' It",
+   "artist": "Cole Swindell",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "creekwillrise--connersmith",
+   "title": "Creek Will Rise",
+   "artist": "Conner Smith",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "rust--coreykent",
+   "title": "Rust",
+   "artist": "Corey Kent",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "hownotto--danshay",
+   "title": "How Not To",
+   "artist": "Dan + Shay",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "whatevershesgot--davidnail",
+   "title": "Whatever She's Got",
+   "artist": "David Nail",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "nightsonfire--davidnail",
+   "title": "Night's On Fire",
+   "artist": "David Nail",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "beautifulmess--diamondrio",
+   "title": "Beautiful Mess",
+   "artist": "Diamond Rio",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "whatwasithinkin--dierksbentley",
+   "title": "What Was I Thinkin'",
+   "artist": "Dierks Bentley",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "5150--dierksbentley",
+   "title": "5-1-5-0",
+   "artist": "Dierks Bentley",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "sideways--dierksbentley",
+   "title": "Sideways",
+   "artist": "Dierks Bentley",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "freeandeasydowntheroadigo--dierksbentley",
+   "title": "Free And Easy (Down The Road I Go)",
+   "artist": "Dierks Bentley",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "somewhereonabeach--dierksbentley",
+   "title": "Somewhere On A Beach",
+   "artist": "Dierks Bentley",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "iholdon--dierksbentley",
+   "title": "I Hold On",
+   "artist": "Dierks Bentley",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "black--dierksbentley",
+   "title": "Black",
+   "artist": "Dierks Bentley",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "hellofanight--dustinlynch",
+   "title": "Hell Of A Night",
+   "artist": "Dustin Lynch",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "cowboysandangels--dustinlynch",
+   "title": "Cowboys and Angels",
+   "artist": "Dustin Lynch",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "whathellneverhave--dylanscott",
+   "title": "What He'll Never Have",
+   "artist": "Dylan Scott",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "newtruck--dylanscott",
+   "title": "New Truck",
+   "artist": "Dylan Scott",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "evenifitbreaksyourheart--eliyoungband",
+   "title": "Even If It Breaks Your Heart",
+   "artist": "Eli Young Band",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "dust--eliyoungband",
+   "title": "Dust",
+   "artist": "Eli Young Band",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "drunklastnight--eliyoungband",
+   "title": "Drunk Last Night",
+   "artist": "Eli Young Band",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "thefalling--eliyoungband",
+   "title": "The Falling",
+   "artist": "Eli Young Band",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "skeletons--eliyoungband",
+   "title": "Skeletons",
+   "artist": "Eli Young Band",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "chancesare--eliyoungband",
+   "title": "Chances Are",
+   "artist": "Eli Young Band",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "radiowaves--eliyoungband",
+   "title": "Radio Waves",
+   "artist": "Eli Young Band",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "fridaynight--ericpaslay",
+   "title": "Friday Night",
+   "artist": "Eric Paslay",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "southsideofsober--evanburrison",
+   "title": "South Side of Sober",
+   "artist": "Evan Burrison",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "anythinggoes--floridageorgialine",
+   "title": "Anything Goes",
+   "artist": "Florida Georgia Line",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "getyourshineon--floridageorgialine",
+   "title": "Get Your Shine On",
+   "artist": "Florida Georgia Line",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "roundhere--floridageorgialine",
+   "title": "Round Here",
+   "artist": "Florida Georgia Line",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "stay--floridageorgialine",
+   "title": "Stay",
+   "artist": "Florida Georgia Line",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "likeyouaintevengone--floridageorgialine",
+   "title": "Like You Ain't Even Gone",
+   "artist": "Florida Georgia Line",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "smoke--floridageorgialine",
+   "title": "Smoke",
+   "artist": "Florida Georgia Line",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "thisishowweroll--floridageorgialine",
+   "title": "This Is How We Roll",
+   "artist": "Florida Georgia Line, Luke Bryan",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "everystormrunsoutofrain--garyallan",
+   "title": "Every Storm (Runs Out Of Rain)",
+   "artist": "Gary Allan",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "breakitinabar--grahambarham",
+   "title": "BREAK IT IN A BAR",
+   "artist": "Graham Barham",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "northofhell--grahambarham",
+   "title": "NORTH OF HELL",
+   "artist": "Graham Barham",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "backroadsong--grangersmith",
+   "title": "Backroad Song",
+   "artist": "Granger Smith",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "ifyouknowheryouknow--haydencoffman",
+   "title": "If You Know Her, You Know",
+   "artist": "Hayden Coffman",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "makeyoumine--highvalley",
+   "title": "Make You Mine",
+   "artist": "High Valley",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "madeyoulook--hudsonwestbrook",
+   "title": "Made You Look",
+   "artist": "Hudson Westbrook",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "barefootbluejeannight--jakeowen",
+   "title": "Barefoot Blue Jean Night",
+   "artist": "Jake Owen",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "americancountrylovesong--jakeowen",
+   "title": "American Country Love Song",
+   "artist": "Jake Owen",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "theonethatgotaway--jakeowen",
+   "title": "The One That Got Away",
+   "artist": "Jake Owen",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "shescountry--jasonaldean",
+   "title": "She's Country",
+   "artist": "Jason Aldean",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "crazytown--jasonaldean",
+   "title": "Crazy Town",
+   "artist": "Jason Aldean",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "whenshesaysbaby--jasonaldean",
+   "title": "When She Says Baby",
+   "artist": "Jason Aldean",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "takealittleride--jasonaldean",
+   "title": "Take A Little Ride",
+   "artist": "Jason Aldean",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "johnnycash--jasonaldean",
+   "title": "Johnny Cash",
+   "artist": "Jason Aldean",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "burninitdown--jasonaldean",
+   "title": "Burnin' It Down",
+   "artist": "Jason Aldean",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "mykindaparty--jasonaldean",
+   "title": "My Kinda Party",
+   "artist": "Jason Aldean",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "nighttrain--jasonaldean",
+   "title": "Night Train",
+   "artist": "Jason Aldean",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "drinktothatallnight--jerrodniemann",
+   "title": "Drink to That All Night",
+   "artist": "Jerrod Niemann",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "sunnyand75--joenichols",
+   "title": "Sunny and 75",
+   "artist": "Joe Nichols",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "gimmiethatgirl--joenichols",
+   "title": "Gimmie That Girl",
+   "artist": "Joe Nichols",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "hardtobecool--joenichols",
+   "title": "Hard to Be Cool",
+   "artist": "Joe Nichols",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "soldthegrundycountyauctionincident--johnmichaelmontgomery",
+   "title": "Sold (The Grundy County Auction Incident)",
+   "artist": "John Michael Montgomery",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "ringoffire--johnnycash",
+   "title": "Ring of Fire",
+   "artist": "Johnny Cash",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "upallnight--jonpardi",
+   "title": "Up All Night",
+   "artist": "Jon Pardi",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "wouldyougowithme--joshturner",
+   "title": "Would You Go With Me",
+   "artist": "Josh Turner",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "longblacktrain--joshturner",
+   "title": "Long Black Train",
+   "artist": "Josh Turner",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "firecracker--joshturner",
+   "title": "Firecracker",
+   "artist": "Josh Turner",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "hometowngirl--joshturner",
+   "title": "Hometown Girl",
+   "artist": "Josh Turner",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "smalltownusa--justinmoore",
+   "title": "Small Town USA",
+   "artist": "Justin Moore",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "copcar--keithurban",
+   "title": "Cop Car",
+   "artist": "Keith Urban",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "longhotsummer--keithurban",
+   "title": "Long Hot Summer",
+   "artist": "Keith Urban",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "somewhereinmycar--keithurban",
+   "title": "Somewhere In My Car",
+   "artist": "Keith Urban",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "igoback--kennychesney",
+   "title": "I Go Back",
+   "artist": "Kenny Chesney",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "alltheprettygirls--kennychesney",
+   "title": "All the Pretty Girls",
+   "artist": "Kenny Chesney",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "whenthesungoesdown--kennychesney",
+   "title": "When the Sun Goes Down",
+   "artist": "Kenny Chesney, Uncle Kracker",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "hardtolove--leebrice",
+   "title": "Hard To Love",
+   "artist": "Lee Brice",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "awomanlikeyou--leebrice",
+   "title": "A Woman Like You",
+   "artist": "Lee Brice",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "drinkingclass--leebrice",
+   "title": "Drinking Class",
+   "artist": "Lee Brice",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "idriveyourtruck--leebrice",
+   "title": "I Drive Your Truck",
+   "artist": "Lee Brice",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "angeleyes--loveandtheft",
+   "title": "Angel Eyes",
+   "artist": "Love and Theft",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "playitagain--lukebryan",
+   "title": "Play It Again",
+   "artist": "Luke Bryan",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "idontwantthisnighttoend--lukebryan",
+   "title": "I Don't Want This Night To End",
+   "artist": "Luke Bryan",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "crashmyparty--lukebryan",
+   "title": "Crash My Party",
+   "artist": "Luke Bryan",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "games--lukebryan",
+   "title": "Games",
+   "artist": "Luke Bryan",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "iseeyou--lukebryan",
+   "title": "I See You",
+   "artist": "Luke Bryan",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "walkastraightline--mackgeiger",
+   "title": "Walk a Straight Line",
+   "artist": "Mack Geiger",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "bettermeforyoubrowneyes--maxmcnown",
+   "title": "Better Me For You (Brown Eyes)",
+   "artist": "Max McNown",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "worldchangeme--maxmcnown",
+   "title": "World Change Me",
+   "artist": "Max McNown",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "donefor--maxmcnown",
+   "title": "Done For",
+   "artist": "Max McNown",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "foreveraintlongenough--maxmcnown",
+   "title": "Forever Ain't Long Enough",
+   "artist": "Max McNown",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "sunshinestate--mccoymoore",
+   "title": "Sunshine State",
+   "artist": "McCoy Moore",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "runawaywithyou--michaelray",
+   "title": "Run Away With You",
+   "artist": "Michael Ray",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "somethingtobeproudof--montgomerygentry",
+   "title": "Something to Be Proud Of",
+   "artist": "Montgomery Gentry",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "gone--montgomerygentry",
+   "title": "Gone",
+   "artist": "Montgomery Gentry",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "whereicomefrom--montgomerygentry",
+   "title": "Where I Come From",
+   "artist": "Montgomery Gentry",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "thewayitalk--morganwallen",
+   "title": "The Way I Talk",
+   "artist": "Morgan Wallen",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "bluelights--murphyelmore",
+   "title": "Blue Lights",
+   "artist": "Murphy Elmore",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "fishininthedark--nittygrittydirtband",
+   "title": "Fishin' in the Dark",
+   "artist": "Nitty Gritty Dirt Band",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "chevyagain--noahhicks",
+   "title": "Chevy Again",
+   "artist": "Noah Hicks",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "olddirtroads--owenriegling",
+   "title": "Old Dirt Roads",
+   "artist": "Owen Riegling",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "carolina--parmalee",
+   "title": "Carolina",
+   "artist": "Parmalee",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "wewent--randyhouser",
+   "title": "We Went",
+   "artist": "Randy Houser",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "howcountryfeels--randyhouser",
+   "title": "How Country Feels",
+   "artist": "Randy Houser",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "runninouttamoonlight--randyhouser",
+   "title": "Runnin' Outta Moonlight",
+   "artist": "Randy Houser",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "rewind--rascalflatts",
+   "title": "Rewind",
+   "artist": "Rascal Flatts",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "fastcarsandfreedom--rascalflatts",
+   "title": "Fast Cars And Freedom",
+   "artist": "Rascal Flatts",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "ilikethesoundofthat--rascalflatts",
+   "title": "I Like The Sound Of That",
+   "artist": "Rascal Flatts",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "yoursifyouwantit--rascalflatts",
+   "title": "Yours If You Want It",
+   "artist": "Rascal Flatts",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "therewasthisgirl--rileygreen",
+   "title": "There Was This Girl",
+   "artist": "Riley Green",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "ifyouregoingthroughhellbeforethedevilevenknows--rodneyatkins",
+   "title": "If You're Going Through Hell (Before The Devil Even Knows)",
+   "artist": "Rodney Atkins",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "farmersdaughter--rodneyatkins",
+   "title": "Farmer's Daughter",
+   "artist": "Rodney Atkins",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "thankgodforyou--rodneyatkins",
+   "title": "Thank God For You",
+   "artist": "Rodney Atkins",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "obsessed--samriggs",
+   "title": "Obsessed",
+   "artist": "Sam Riggs",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "run--samriggs",
+   "title": "Run",
+   "artist": "Sam Riggs",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "daisy--samriggs",
+   "title": "Daisy",
+   "artist": "Sam Riggs",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "4wheelhigh--seanstemaly",
+   "title": "4 Wheel High",
+   "artist": "Sean Stemaly",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "lastnightallday--seanstemaly",
+   "title": "Last Night All Day",
+   "artist": "Sean Stemaly",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "abarsongtipsy--shaboozey",
+   "title": "A Bar Song (Tipsy)",
+   "artist": "Shaboozey",
+   "genre": "country",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "betterdigtwo--thebandperry",
+   "title": "Better Dig Two",
+   "artist": "The Band Perry",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "ifidieyoung--thebandperry",
+   "title": "If I Die Young",
+   "artist": "The Band Perry",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "myhome--thewetwhistles",
+   "title": "My Home",
+   "artist": "The Wet Whistles",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "itgoeslikethis--thomasrhett",
+   "title": "It Goes Like This",
+   "artist": "Thomas Rhett",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "crashandburn--thomasrhett",
+   "title": "Crash and Burn",
+   "artist": "Thomas Rhett",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "areyougonnakissmeornot--thompsonsquare",
+   "title": "Are You Gonna Kiss Me Or Not",
+   "artist": "Thompson Square",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "somethinglikethat--timmcgraw",
+   "title": "Something Like That",
+   "artist": "Tim McGraw",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "shotgunrider--timmcgraw",
+   "title": "Shotgun Rider",
+   "artist": "Tim McGraw",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "madeinamerica--tobykeith",
+   "title": "Made in America",
+   "artist": "Toby Keith",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "brunette--tuckerwetmore",
+   "title": "Brunette",
+   "artist": "Tucker Wetmore",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "devilyouknow--tylerbraden",
+   "title": "DEVIL YOU KNOW",
+   "artist": "Tyler Braden",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "littleredwine--tylerbraden",
+   "title": "Little Red Wine",
+   "artist": "Tyler Braden",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "thankmeforthat--tylerbraden",
+   "title": "Thank Me for That",
+   "artist": "Tyler Braden",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "betteroff--tylerbraden",
+   "title": "Better Off",
+   "artist": "Tyler Braden",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "horseshoeshandgrenades--tylerbraden",
+   "title": "Horseshoes & Hand Grenades",
+   "artist": "Tyler Braden",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "roadsigodown--tylerchambers",
+   "title": "Roads I Go Down",
+   "artist": "Tyler Chambers, Dylan Marlowe",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "toes--zacbrownband",
+   "title": "Toes",
+   "artist": "Zac Brown Band",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "assheswalkingaway--zacbrownband",
+   "title": "As She's Walking Away",
+   "artist": "Zac Brown Band, Alan Jackson",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "kneedeep--zacbrownband",
+   "title": "Knee Deep (feat. Jimmy Buffett)",
+   "artist": "Zac Brown Band, Jimmy Buffett",
+   "genre": "country",
+   "playlists": [
+    "Country"
+   ],
+   "source": "spotify"
+  },
+  {
+   "id": "thespectre--alanwalker",
+   "title": "The Spectre",
+   "artist": "Alan Walker",
+   "genre": "electronic",
+   "playlists": [
+    "running"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "darkside--alanwalker",
+   "title": "Darkside",
+   "artist": "Alan Walker, Au/Ra, Tomine Harket",
+   "genre": "electronic",
+   "playlists": [
+    "Driving",
+    "running"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "morethanyouknow--axwellingrosso",
+   "title": "More Than You Know",
+   "artist": "Axwell Λ Ingrosso",
+   "genre": "electronic",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "backagain--bryanv",
+   "title": "Back Again (feat. RHEA)",
+   "artist": "Bryan V",
+   "genre": "electronic",
+   "playlists": [
+    "running"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "easyonmyheart--gabryponte",
+   "title": "Easy On My Heart",
+   "artist": "Gabry Ponte",
+   "genre": "electronic",
+   "playlists": [
+    "running"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "ignite--k391",
+   "title": "Ignite (feat. Seungri)",
+   "artist": "K-391",
+   "genre": "electronic",
+   "playlists": [
+    "running",
+    "Liked"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "chasingparadise--kygo",
+   "title": "Chasing Paradise",
+   "artist": "Kygo, OneRepublic",
+   "genre": "electronic",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "dancingallalone--morganpage",
+   "title": "Dancing All Alone",
+   "artist": "Morgan Page, TELYKAST",
+   "genre": "electronic",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "dontyouworrychild--swedishhousemafia",
+   "title": "Don't You Worry Child (feat. John Martin)",
+   "artist": "Swedish House Mafia",
+   "genre": "electronic",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "nevada--vicetone",
+   "title": "Nevada (feat. Cozi Zuehlsdorff)",
+   "artist": "Vicetone",
+   "genre": "electronic",
+   "playlists": [
+    "Driving",
+    "running"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "hotgirlbummer--blackbear",
+   "title": "hot girl bummer",
+   "artist": "blackbear",
+   "genre": "hiphop",
+   "playlists": [
+    "Liked"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "cinderellaman--eminem",
+   "title": "Cinderella Man",
+   "artist": "Eminem",
+   "genre": "hiphop",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "comego--juicewrld",
+   "title": "Come & Go (feat. Marshmello)",
+   "artist": "Juice WRLD",
+   "genre": "hiphop",
+   "playlists": [
+    "Liked"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "amidreaming--metroboomin",
+   "title": "Am I Dreaming",
+   "artist": "Metro Boomin, A$AP Rocky, Roisee",
+   "genre": "hiphop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "bornarockstar--neffex",
+   "title": "Born a Rockstar",
+   "artist": "NEFFEX",
+   "genre": "hiphop",
+   "playlists": [
+    "Liked"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "ghost--ryancaraveo",
+   "title": "Ghost",
+   "artist": "Ryan Caraveo",
+   "genre": "hiphop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "ahole--vinjay",
+   "title": "A**HOLE",
+   "artist": "Vin Jay",
+   "genre": "hiphop",
+   "playlists": [
+    "Liked"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "burningdown--alexwarren",
+   "title": "Burning Down",
+   "artist": "Alex Warren",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "eternity--alexwarren",
+   "title": "Eternity",
+   "artist": "Alex Warren",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "troubledwaters--alexwarren",
+   "title": "Troubled Waters",
+   "artist": "Alex Warren",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "easiersaidthandone--alexanderstewart",
+   "title": "easier said than done",
+   "artist": "Alexander Stewart",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "pompeii--bastille",
+   "title": "Pompeii",
+   "artist": "Bastille",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "grenade--brunomars",
+   "title": "Grenade",
+   "artist": "Bruno Mars",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "electriclove--brns",
+   "title": "Electric Love",
+   "artist": "BØRNS",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "hymnfortheweekend--coldplay",
+   "title": "Hymn for the Weekend",
+   "artist": "Coldplay",
+   "genre": "pop",
+   "playlists": [
+    "Driving",
+    "running",
+    "Liked"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "vivalavida--coldplay",
+   "title": "Viva La Vida",
+   "artist": "Coldplay",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "paradise--coldplay",
+   "title": "Paradise",
+   "artist": "Coldplay",
+   "genre": "pop",
+   "playlists": [
+    "Driving",
+    "running"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "oneofthosedays--colonyhouse",
+   "title": "One of Those Days",
+   "artist": "Colony House",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "somebodythatiusedtoknow--gotye",
+   "title": "Somebody That I Used To Know (feat. Kimbra)",
+   "artist": "Gotye",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "stereohearts--gymclassheroes",
+   "title": "Stereo Hearts (feat. Adam Levine)",
+   "artist": "Gym Class Heroes",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "tiptoe--imaginedragons",
+   "title": "Tiptoe",
+   "artist": "Imagine Dragons",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "ibetmylife--imaginedragons",
+   "title": "I Bet My Life",
+   "artist": "Imagine Dragons",
+   "genre": "pop",
+   "playlists": [
+    "running"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "monster--imaginedragons",
+   "title": "Monster",
+   "artist": "Imagine Dragons",
+   "genre": "pop",
+   "playlists": [
+    "running"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "whatchasay--jasonderulo",
+   "title": "Whatcha Say",
+   "artist": "Jason Derulo",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "dayornight--jerviscampbell",
+   "title": "Day or Night",
+   "artist": "Jervis Campbell",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "10000foes--johnmichaelhowell",
+   "title": "10,000 Foes",
+   "artist": "John Michael Howell",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "heisthesame--jonbellion",
+   "title": "He Is The Same",
+   "artist": "Jon Bellion",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "handofgodoutro--jonbellion",
+   "title": "Hand Of God (Outro)",
+   "artist": "Jon Bellion",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "whistling--jonnystanback",
+   "title": "Whistling",
+   "artist": "Jonny Stanback",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "pokerface--ladygaga",
+   "title": "Poker Face",
+   "artist": "Lady Gaga",
+   "genre": "pop",
+   "playlists": [
+    "running"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "justdance--ladygaga",
+   "title": "Just Dance (feat. Colby O'Donis)",
+   "artist": "Lady Gaga",
+   "genre": "pop",
+   "playlists": [
+    "running"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "summertimesadness--lanadelrey",
+   "title": "Summertime Sadness",
+   "artist": "Lana Del Rey",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "wildflowers--maddiepoppe",
+   "title": "Wildflowers",
+   "artist": "Maddie Poppe",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "luckystrike--maroon5",
+   "title": "Lucky Strike",
+   "artist": "Maroon 5",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "goinggoinggone--michaelsanzone",
+   "title": "Going, Going, Gone",
+   "artist": "Michael Sanzone",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "dynasty--miia",
+   "title": "Dynasty",
+   "artist": "MIIA",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "classic--mkto",
+   "title": "Classic",
+   "artist": "MKTO",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "thecave--mumfordsons",
+   "title": "The Cave",
+   "artist": "Mumford & Sons",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "littlelionman--mumfordsons",
+   "title": "Little Lion Man",
+   "artist": "Mumford & Sons",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "solo--mylessmith",
+   "title": "Solo",
+   "artist": "Myles Smith",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "stargazing--mylessmith",
+   "title": "Stargazing",
+   "artist": "Myles Smith",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "river--mylessmith",
+   "title": "River",
+   "artist": "Myles Smith",
+   "genre": "pop",
+   "playlists": [
+    "Driving",
+    "Liked"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "amiwrong--nicovinz",
+   "title": "Am I Wrong",
+   "artist": "Nico & Vinz",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "littletalks--ofmonstersandmen",
+   "title": "Little Talks",
+   "artist": "Of Monsters and Men",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "countingstars--onerepublic",
+   "title": "Counting Stars",
+   "artist": "OneRepublic",
+   "genre": "pop",
+   "playlists": [
+    "Driving",
+    "running"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "ifilosemyself--onerepublic",
+   "title": "If I Lose Myself",
+   "artist": "OneRepublic",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "someday--onerepublic",
+   "title": "Someday",
+   "artist": "OneRepublic",
+   "genre": "pop",
+   "playlists": [
+    "Driving",
+    "Liked"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "loverunsout--onerepublic",
+   "title": "Love Runs Out",
+   "artist": "OneRepublic",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "nobodyfromkaijuno8--onerepublic",
+   "title": "Nobody (from Kaiju No. 8)",
+   "artist": "OneRepublic",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "houseofmemories--panicatthedisco",
+   "title": "House of Memories",
+   "artist": "Panic! At The Disco",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "inthewater--petemccredie",
+   "title": "In The Water",
+   "artist": "Pete McCredie",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "gonegonegone--phillipphillips",
+   "title": "Gone, Gone, Gone",
+   "artist": "Phillip Phillips",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "shutupanddrive--rihanna",
+   "title": "Shut Up And Drive",
+   "artist": "Rihanna",
+   "genre": "pop",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "sm--rihanna",
+   "title": "S&M",
+   "artist": "Rihanna",
+   "genre": "pop",
+   "playlists": [
+    "running"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "disturbia--rihanna",
+   "title": "Disturbia",
+   "artist": "Rihanna",
+   "genre": "pop",
+   "playlists": [
+    "running"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "intothenight--santana",
+   "title": "Into the Night (feat. Chad Kroeger)",
+   "artist": "Santana",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "cigarette--shayazamora",
+   "title": "Cigarette",
+   "artist": "Shaya Zamora",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "shessohighaboveme--talbachman",
+   "title": "She's so High (Above Me)",
+   "artist": "Tal Bachman",
+   "genre": "pop",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "baddreams--teddyswims",
+   "title": "Bad Dreams",
+   "artist": "Teddy Swims",
+   "genre": "pop",
+   "playlists": [
+    "Driving",
+    "Liked"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "perfectportraitofyounglove--the502s",
+   "title": "Perfect Portrait of Young Love",
+   "artist": "The 502s",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "justcantgetenough--theblackeyedpeas",
+   "title": "Just Can't Get Enough",
+   "artist": "The Black Eyed Peas",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "igottafeeling--theblackeyedpeas",
+   "title": "I Gotta Feeling",
+   "artist": "The Black Eyed Peas",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "temporarybliss--thecab",
+   "title": "Temporary Bliss",
+   "artist": "The Cab",
+   "genre": "pop",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "somethingjustlikethis--thechainsmokers",
+   "title": "Something Just Like This",
+   "artist": "The Chainsmokers, Coldplay",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "ophelia--thelumineers",
+   "title": "Ophelia",
+   "artist": "The Lumineers",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "blindinglights--theweeknd",
+   "title": "Blinding Lights",
+   "artist": "The Weeknd",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "footprints--tomgregory",
+   "title": "Footprints",
+   "artist": "Tom Gregory",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "habitsstayhigh--tovelo",
+   "title": "Habits (Stay High)",
+   "artist": "Tove Lo",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "riptide--vancejoy",
+   "title": "Riptide",
+   "artist": "Vance Joy",
+   "genre": "pop",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "itsnotmytime--3doorsdown",
+   "title": "It's Not My Time",
+   "artist": "3 Doors Down",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "whenimgone--3doorsdown",
+   "title": "When I'm Gone",
+   "artist": "3 Doors Down",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "ontherun--3doorsdown",
+   "title": "On The Run",
+   "artist": "3 Doors Down",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "thunderstruck--acdc",
+   "title": "Thunderstruck",
+   "artist": "AC/DC",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "invincible--adelitasway",
+   "title": "Invincible",
+   "artist": "Adelitas Way",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "whatifyougo--adelitasway",
+   "title": "What If You Go?",
+   "artist": "Adelitas Way",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "poison--alicecooper",
+   "title": "Poison",
+   "artist": "Alice Cooper",
+   "genre": "rock",
+   "playlists": [
+    "Driving",
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "monsters--alltimelow",
+   "title": "Monsters (feat. Demi Lovato & blackbear)",
+   "artist": "All Time Low",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "sleepwalking--alltimelow",
+   "title": "Sleepwalking",
+   "artist": "All Time Low",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "backseatserenade--alltimelow",
+   "title": "Backseat Serenade",
+   "artist": "All Time Low",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "killingmeslowly--badwolves",
+   "title": "Killing Me Slowly",
+   "artist": "Bad Wolves",
+   "genre": "rock",
+   "playlists": [
+    "Lifting",
+    "Liked"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "sober--badwolves",
+   "title": "Sober",
+   "artist": "Bad Wolves",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "untiltheend--breakingbenjamin",
+   "title": "Until The End",
+   "artist": "Breaking Benjamin",
+   "genre": "rock",
+   "playlists": [
+    "Liked"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "oneforthemoney--escapethefate",
+   "title": "One For the Money",
+   "artist": "Escape The Fate",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "popularmonster--fallinginreverse",
+   "title": "Popular Monster",
+   "artist": "Falling In Reverse",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "voicesinmyhead--fallinginreverse",
+   "title": "Voices In My Head",
+   "artist": "Falling In Reverse",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "washitallaway--fivefingerdeathpunch",
+   "title": "Wash It All Away",
+   "artist": "Five Finger Death Punch",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "takemeout--franzferdinand",
+   "title": "Take Me Out",
+   "artist": "Franz Ferdinand",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "lostmyway--futurek1d",
+   "title": "Lost My Way",
+   "artist": "Future K1d",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "bulletproof--godsmack",
+   "title": "Bulletproof",
+   "artist": "Godsmack",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "unforgettable--godsmack",
+   "title": "Unforgettable",
+   "artist": "Godsmack",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "underyourscars--godsmack",
+   "title": "Under Your Scars",
+   "artist": "Godsmack",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "holidayboulevardofbrokendreams--greenday",
+   "title": "Holiday / Boulevard of Broken Dreams",
+   "artist": "Green Day",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "americanidiot--greenday",
+   "title": "American Idiot",
+   "artist": "Green Day",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "imissthemisery--halestorm",
+   "title": "I Miss the Misery",
+   "artist": "Halestorm",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "betweenheavenandhell--hollowember",
+   "title": "Between Heaven and Hell",
+   "artist": "Hollow Ember",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "oddoneout--hollowember",
+   "title": "Odd One Out",
+   "artist": "Hollow Ember",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "bangbang--hollywoodundead",
+   "title": "Bang Bang",
+   "artist": "Hollywood Undead",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "whateverittakes--hollywoodundead",
+   "title": "Whatever It Takes",
+   "artist": "Hollywood Undead",
+   "genre": "rock",
+   "playlists": [
+    "Liked"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "gasassandgrass--insanethrottle",
+   "title": "GAS ASS AND GRASS",
+   "artist": "Insane Throttle",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "firsttime--lifehouse",
+   "title": "First Time",
+   "artist": "Lifehouse",
+   "genre": "rock",
+   "playlists": [
+    "Driving"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "halfwaygone--lifehouse",
+   "title": "Halfway Gone",
+   "artist": "Lifehouse",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "numb--linkinpark",
+   "title": "Numb",
+   "artist": "Linkin Park",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "whativedone--linkinpark",
+   "title": "What I've Done",
+   "artist": "Linkin Park",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "newdivide--linkinpark",
+   "title": "New Divide",
+   "artist": "Linkin Park",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "letyougo--mgk",
+   "title": "Let You Go",
+   "artist": "mgk",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "rehab--mgk",
+   "title": "Rehab",
+   "artist": "mgk",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "apartment--nightbreakers",
+   "title": "Apartment",
+   "artist": "NIGHTBREAKERS",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "breathingmylast--obsidianswing",
+   "title": "Breathing My Last",
+   "artist": "Obsidian Swing",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "bulletinmyhand--redlightking",
+   "title": "Bullet In My Hand",
+   "artist": "Redlight King",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "tenmillionvoices--shamansharvest",
+   "title": "Ten Million Voices",
+   "artist": "Shaman's Harvest",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "askingforit--shinedown",
+   "title": "Asking for It",
+   "artist": "Shinedown",
+   "genre": "rock",
+   "playlists": [
+    "Lifting",
+    "Liked"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "mynamewearingmeout--shinedown",
+   "title": "My Name (Wearing Me Out)",
+   "artist": "Shinedown",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "blackcadillac--shinedown",
+   "title": "Black Cadillac",
+   "artist": "Shinedown",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "stateofmyhead--shinedown",
+   "title": "State of My Head",
+   "artist": "Shinedown",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "planetzero--shinedown",
+   "title": "Planet Zero",
+   "artist": "Shinedown",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "devil--shinedown",
+   "title": "DEVIL",
+   "artist": "Shinedown",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "dancekiddance--shinedown",
+   "title": "Dance, Kid, Dance",
+   "artist": "Shinedown",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "youngagain--shinedown",
+   "title": "Young Again",
+   "artist": "Shinedown",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "machinegun--shinedown",
+   "title": "Machine Gun",
+   "artist": "Shinedown",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "45--shinedown",
+   "title": "45",
+   "artist": "Shinedown",
+   "genre": "rock",
+   "playlists": [
+    "Liked"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "venom--smashintopieces",
+   "title": "Venom",
+   "artist": "Smash Into Pieces",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "runningawayfromhome--smashintopieces",
+   "title": "Running Away from Home",
+   "artist": "Smash Into Pieces",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "thethunderrolls--stateofminenoresolve",
+   "title": "The Thunder Rolls",
+   "artist": "State of Mine & No Resolve",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "stepoutoftheworld--theraccs",
+   "title": "Step Out Of The World",
+   "artist": "The Raccs",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "automaticsun--thewarning",
+   "title": "Automatic Sun",
+   "artist": "The Warning",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "angel--theoryofadeadman",
+   "title": "Angel",
+   "artist": "Theory Of A Deadman",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "allornothing--theoryofadeadman",
+   "title": "All or Nothing",
+   "artist": "Theory Of A Deadman",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "voodoo--voil",
+   "title": "Voodoo",
+   "artist": "VOILÀ",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "madeforthis--voil",
+   "title": "Made For This",
+   "artist": "VOILÀ",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "hazycherryjuicewhitemercedes--yesterdayonceagain",
+   "title": "Hazy (Cherry Juice & White Mercedes)",
+   "artist": "Yesterday Once Again",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "adrenaline--zero936",
+   "title": "Adrenaline",
+   "artist": "Zero 9:36",
+   "genre": "rock",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "laymedown--christomlin",
+   "title": "Lay Me Down",
+   "artist": "Chris Tomlin",
+   "genre": "worship",
+   "playlists": [
+    "Worship"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "washed--elevationrhythm",
+   "title": "WASHED",
+   "artist": "ELEVATION RHYTHM",
+   "genre": "worship",
+   "playlists": [
+    "Worship"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "isawthelight--joshturner",
+   "title": "I Saw The Light (feat. Sonya Isaacs)",
+   "artist": "Josh Turner",
+   "genre": "worship",
+   "playlists": [
+    "Worship"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "theprodigal--josiahqueen",
+   "title": "The Prodigal",
+   "artist": "Josiah Queen",
+   "genre": "worship",
+   "playlists": [
+    "Worship"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "demons--josiahqueen",
+   "title": "demons",
+   "artist": "Josiah Queen, Julia Poe",
+   "genre": "worship",
+   "playlists": [
+    "Worship"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "christandchristcrucified--lindycofer",
+   "title": "Christ And Christ Crucified (Live)",
+   "artist": "Lindy Cofer, Circuit Rider Music, Mitch Wong",
+   "genre": "worship",
+   "playlists": [
+    "Worship"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "inchristalone--passion",
+   "title": "In Christ Alone (Live)",
+   "artist": "Passion, Kristian Stanfill",
+   "genre": "worship",
+   "playlists": [
+    "Worship"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "mylighthouse--rendcollective",
+   "title": "My Lighthouse",
+   "artist": "Rend Collective",
+   "genre": "worship",
+   "playlists": [
+    "Worship"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "nevergoingbacktook--theafters",
+   "title": "Never Going Back to Ok",
+   "artist": "The Afters",
+   "genre": "worship",
+   "playlists": [
+    "Driving",
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "reasons--thebelongingco",
+   "title": "REASONS (Live)",
+   "artist": "The Belonging Co, Mitch Wong",
+   "genre": "worship",
+   "playlists": [
+    "Worship"
+   ],
+   "source": "ytmusic"
+  },
+  {
+   "id": "thehardtimes--tobymac",
+   "title": "The Hard Times",
+   "artist": "TobyMac",
+   "genre": "worship",
+   "playlists": [
+    "Lifting"
+   ],
+   "source": "ytmusic"
+  }
+ ],
+ "playlists": [
+  {
+   "name": "Country",
+   "source": "spotify",
+   "trackIds": [
+    "ifyouregoingthroughhellbeforethedevilevenknows--rodneyatkins",
+    "whatwasithinkin--dierksbentley",
+    "somethingtobeproudof--montgomerygentry",
+    "wouldyougowithme--joshturner",
+    "cowboycasanova--carrieunderwood",
+    "shescountry--jasonaldean",
+    "longblacktrain--joshturner",
+    "drinktothatallnight--jerrodniemann",
+    "thisishowweroll--floridageorgialine",
+    "anythinggoes--floridageorgialine",
+    "wewent--randyhouser",
+    "everystormrunsoutofrain--garyallan",
+    "howcountryfeels--randyhouser",
+    "hellofanight--dustinlynch",
+    "fridaynight--ericpaslay",
+    "awnaw--chrisyoung",
+    "madeinamerica--tobykeith",
+    "thewayitalk--morganwallen",
+    "crazytown--jasonaldean",
+    "farmersdaughter--rodneyatkins",
+    "betterdigtwo--thebandperry",
+    "parachute--chrisstapleton",
+    "playitagain--lukebryan",
+    "kneedeep--zacbrownband",
+    "copcar--keithurban",
+    "evenifitbreaksyourheart--eliyoungband",
+    "idontwantthisnighttoend--lukebryan",
+    "getyourshineon--floridageorgialine",
+    "heygirl--billycurrington",
+    "hardtolove--leebrice",
+    "assheswalkingaway--zacbrownband",
+    "awomanlikeyou--leebrice",
+    "5150--dierksbentley",
+    "sideways--dierksbentley",
+    "angeleyes--loveandtheft",
+    "runninouttamoonlight--randyhouser",
+    "peoplearecrazy--billycurrington",
+    "freeandeasydowntheroadigo--dierksbentley",
+    "longhotsummer--keithurban",
+    "toes--zacbrownband",
+    "whenshesaysbaby--jasonaldean",
+    "firecracker--joshturner",
+    "bottomsup--brantleygilbert",
+    "somethinglikethat--timmcgraw",
+    "takealittleride--jasonaldean",
+    "mudonthetires--bradpaisley",
+    "gooddirections--billycurrington",
+    "gone--montgomerygentry",
+    "areyougonnakissmeornot--thompsonsquare",
+    "voices--chrisyoung",
+    "smalltownusa--justinmoore",
+    "johnnycash--jasonaldean",
+    "carolina--parmalee",
+    "upallnight--jonpardi",
+    "drinkingclass--leebrice",
+    "roundhere--floridageorgialine",
+    "aintnothingboutyou--brooksdunn",
+    "idriveyourtruck--leebrice",
+    "igoback--kennychesney",
+    "surebecoolifyoudid--blakeshelton",
+    "itgoeslikethis--thomasrhett",
+    "beautifulmess--diamondrio",
+    "whereicomefrom--montgomerygentry",
+    "shewontbelonelylong--claywalker",
+    "backroadsong--grangersmith",
+    "onehellofanamen--brantleygilbert",
+    "cowboysandangels--dustinlynch",
+    "sunnyand75--joenichols",
+    "somewhereonabeach--dierksbentley",
+    "gimmiethatgirl--joenichols",
+    "dontit--billycurrington",
+    "whatevershesgot--davidnail",
+    "iholdon--dierksbentley",
+    "crashandburn--thomasrhett",
+    "hometowngirl--joshturner",
+    "lonelyeyes--chrisyoung",
+    "burninitdown--jasonaldean",
+    "alltheprettygirls--kennychesney",
+    "barefootbluejeannight--jakeowen",
+    "whenthesungoesdown--kennychesney",
+    "itdonthurtlikeitusedto--billycurrington",
+    "dust--eliyoungband",
+    "shotgunrider--timmcgraw",
+    "crashmyparty--lukebryan",
+    "devilyouknow--tylerbraden",
+    "mykindaparty--jasonaldean",
+    "black--dierksbentley",
+    "drunkonyourlove--bretteldredge",
+    "weride--bryanmartin",
+    "stayalittlelonger--brothersosborne",
+    "thinkofyou--chrisyoung",
+    "drunklastnight--eliyoungband",
+    "whoiamwithyou--chrisyoung",
+    "americancountrylovesong--jakeowen",
+    "somewhereinmycar--keithurban",
+    "littleredwine--tylerbraden",
+    "loveyoutoolate--coleswindell",
+    "therewasthisgirl--rileygreen",
+    "games--lukebryan",
+    "ifidieyoung--thebandperry",
+    "stay--floridageorgialine",
+    "makeyoumine--highvalley",
+    "rewind--rascalflatts",
+    "thankmeforthat--tylerbraden",
+    "fastcarsandfreedom--rascalflatts",
+    "ilikethesoundofthat--rascalflatts",
+    "littlebitofyou--chasebryant",
+    "nightsonfire--davidnail",
+    "iseeyou--lukebryan",
+    "likeyouaintevengone--floridageorgialine",
+    "thankgodforyou--rodneyatkins",
+    "breakitinabar--grahambarham",
+    "hownotto--danshay",
+    "yoursifyouwantit--rascalflatts",
+    "whathellneverhave--dylanscott",
+    "runawaywithyou--michaelray",
+    "bettermeforyoubrowneyes--maxmcnown",
+    "nighttrain--jasonaldean",
+    "smoke--floridageorgialine",
+    "newtruck--dylanscott",
+    "worldchangeme--maxmcnown",
+    "hardtobecool--joenichols",
+    "brunette--tuckerwetmore",
+    "ringoffire--johnnycash",
+    "wayfarerweather--chasebryant",
+    "hellifiknow--chasebryant",
+    "rust--coreykent",
+    "thefalling--eliyoungband",
+    "skeletons--eliyoungband",
+    "chancesare--eliyoungband",
+    "4wheelhigh--seanstemaly",
+    "betteroff--tylerbraden",
+    "ifyouknowheryouknow--haydencoffman",
+    "northofhell--grahambarham",
+    "lastnightallday--seanstemaly",
+    "bluelights--murphyelmore",
+    "thisyoung--bengallaher",
+    "chevyagain--noahhicks",
+    "obsessed--samriggs",
+    "roadsigodown--tylerchambers",
+    "creekwillrise--connersmith",
+    "run--samriggs",
+    "theonethatgotaway--jakeowen",
+    "soldthegrundycountyauctionincident--johnmichaelmontgomery",
+    "fishininthedark--nittygrittydirtband",
+    "daisy--samriggs",
+    "radiowaves--eliyoungband",
+    "donefor--maxmcnown",
+    "foreveraintlongenough--maxmcnown",
+    "horseshoeshandgrenades--tylerbraden",
+    "olddirtroads--owenriegling",
+    "shedoes--caseybarnes",
+    "walkastraightline--mackgeiger",
+    "chillinit--coleswindell",
+    "driverdrive--brookelee",
+    "yourtown--antwanetyler",
+    "everythingbutok--austinsnell",
+    "madeyoulook--hudsonwestbrook",
+    "cigarettesmoke--andrewhyatt",
+    "throwndarts--canaansmith",
+    "southsideofsober--evanburrison",
+    "myhome--thewetwhistles",
+    "sunshinestate--mccoymoore"
+   ]
+  },
+  {
+   "name": "Driving",
+   "source": "ytmusic",
+   "trackIds": [
+    "dontyouworrychild--swedishhousemafia",
+    "ophelia--thelumineers",
+    "countingstars--onerepublic",
+    "solo--mylessmith",
+    "justcantgetenough--theblackeyedpeas",
+    "blindinglights--theweeknd",
+    "amidreaming--metroboomin",
+    "hymnfortheweekend--coldplay",
+    "ghost--ryancaraveo",
+    "ifilosemyself--onerepublic",
+    "someday--onerepublic",
+    "abarsongtipsy--shaboozey",
+    "stargazing--mylessmith",
+    "loverunsout--onerepublic",
+    "vivalavida--coldplay",
+    "thecave--mumfordsons",
+    "gonegonegone--phillipphillips",
+    "houseofmemories--panicatthedisco",
+    "amiwrong--nicovinz",
+    "grenade--brunomars",
+    "somethingjustlikethis--thechainsmokers",
+    "igottafeeling--theblackeyedpeas",
+    "pompeii--bastille",
+    "riptide--vancejoy",
+    "littletalks--ofmonstersandmen",
+    "nobodyfromkaijuno8--onerepublic",
+    "littlelionman--mumfordsons",
+    "somebodythatiusedtoknow--gotye",
+    "paradise--coldplay",
+    "luckystrike--maroon5",
+    "morethanyouknow--axwellingrosso",
+    "whatchasay--jasonderulo",
+    "poison--alicecooper",
+    "summertimesadness--lanadelrey",
+    "intothenight--santana",
+    "electriclove--brns",
+    "heisthesame--jonbellion",
+    "handofgodoutro--jonbellion",
+    "habitsstayhigh--tovelo",
+    "stereohearts--gymclassheroes",
+    "darkside--alanwalker",
+    "oneofthosedays--colonyhouse",
+    "cigarette--shayazamora",
+    "chasingparadise--kygo",
+    "dynasty--miia",
+    "tiptoe--imaginedragons",
+    "classic--mkto",
+    "burningdown--alexwarren",
+    "eternity--alexwarren",
+    "goinggoinggone--michaelsanzone",
+    "footprints--tomgregory",
+    "whistling--jonnystanback",
+    "wildflowers--maddiepoppe",
+    "dayornight--jerviscampbell",
+    "troubledwaters--alexwarren",
+    "dancingallalone--morganpage",
+    "nevada--vicetone",
+    "inthewater--petemccredie",
+    "baddreams--teddyswims",
+    "river--mylessmith",
+    "easiersaidthandone--alexanderstewart",
+    "firsttime--lifehouse",
+    "perfectportraitofyounglove--the502s",
+    "10000foes--johnmichaelhowell",
+    "nevergoingbacktook--theafters"
+   ]
+  },
+  {
+   "name": "Lifting",
+   "source": "ytmusic",
+   "trackIds": [
+    "tenmillionvoices--shamansharvest",
+    "killingmeslowly--badwolves",
+    "sober--badwolves",
+    "bulletinmyhand--redlightking",
+    "temporarybliss--thecab",
+    "angel--theoryofadeadman",
+    "letyougo--mgk",
+    "bulletproof--godsmack",
+    "bangbang--hollywoodundead",
+    "unforgettable--godsmack",
+    "venom--smashintopieces",
+    "rehab--mgk",
+    "cinderellaman--eminem",
+    "askingforit--shinedown",
+    "adrenaline--zero936",
+    "poison--alicecooper",
+    "holidayboulevardofbrokendreams--greenday",
+    "thethunderrolls--stateofminenoresolve",
+    "washitallaway--fivefingerdeathpunch",
+    "oneforthemoney--escapethefate",
+    "numb--linkinpark",
+    "americanidiot--greenday",
+    "imissthemisery--halestorm",
+    "thunderstruck--acdc",
+    "underyourscars--godsmack",
+    "mynamewearingmeout--shinedown",
+    "whativedone--linkinpark",
+    "newdivide--linkinpark",
+    "popularmonster--fallinginreverse",
+    "voicesinmyhead--fallinginreverse",
+    "takemeout--franzferdinand",
+    "blackcadillac--shinedown",
+    "stateofmyhead--shinedown",
+    "planetzero--shinedown",
+    "devil--shinedown",
+    "monsters--alltimelow",
+    "dancekiddance--shinedown",
+    "voodoo--voil",
+    "madeforthis--voil",
+    "invincible--adelitasway",
+    "shutupanddrive--rihanna",
+    "automaticsun--thewarning",
+    "sleepwalking--alltimelow",
+    "lostmyway--futurek1d",
+    "breathingmylast--obsidianswing",
+    "hazycherryjuicewhitemercedes--yesterdayonceagain",
+    "itsnotmytime--3doorsdown",
+    "shessohighaboveme--talbachman",
+    "betweenheavenandhell--hollowember",
+    "whenimgone--3doorsdown",
+    "gasassandgrass--insanethrottle",
+    "whatifyougo--adelitasway",
+    "halfwaygone--lifehouse",
+    "nevergoingbacktook--theafters",
+    "stepoutoftheworld--theraccs",
+    "backseatserenade--alltimelow",
+    "oddoneout--hollowember",
+    "runningawayfromhome--smashintopieces",
+    "apartment--nightbreakers",
+    "allornothing--theoryofadeadman",
+    "youngagain--shinedown",
+    "ontherun--3doorsdown",
+    "thehardtimes--tobymac",
+    "machinegun--shinedown"
+   ]
+  },
+  {
+   "name": "Worship",
+   "source": "ytmusic",
+   "trackIds": [
+    "laymedown--christomlin",
+    "mylighthouse--rendcollective",
+    "demons--josiahqueen",
+    "theprodigal--josiahqueen",
+    "washed--elevationrhythm",
+    "isawthelight--joshturner",
+    "inchristalone--passion",
+    "christandchristcrucified--lindycofer",
+    "reasons--thebelongingco"
+   ]
+  },
+  {
+   "name": "running",
+   "source": "ytmusic",
+   "trackIds": [
+    "ignite--k391",
+    "paradise--coldplay",
+    "ibetmylife--imaginedragons",
+    "hymnfortheweekend--coldplay",
+    "countingstars--onerepublic",
+    "monster--imaginedragons",
+    "sm--rihanna",
+    "backagain--bryanv",
+    "disturbia--rihanna",
+    "nevada--vicetone",
+    "thespectre--alanwalker",
+    "pokerface--ladygaga",
+    "darkside--alanwalker",
+    "justdance--ladygaga",
+    "easyonmyheart--gabryponte"
+   ]
+  },
+  {
+   "name": "Liked",
+   "source": "ytmusic",
+   "trackIds": [
+    "river--mylessmith",
+    "baddreams--teddyswims",
+    "untiltheend--breakingbenjamin",
+    "ignite--k391",
+    "45--shinedown",
+    "killingmeslowly--badwolves",
+    "whateverittakes--hollywoodundead",
+    "someday--onerepublic",
+    "hotgirlbummer--blackbear",
+    "bornarockstar--neffex",
+    "askingforit--shinedown",
+    "comego--juicewrld",
+    "hymnfortheweekend--coldplay",
+    "ahole--vinjay"
+   ]
+  }
+ ]
+}

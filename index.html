@@ -1,0 +1,369 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0e0f13">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<link rel="manifest" href="manifest.json">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<title>My Music</title>
+<style>
+:root{
+  --bg:#0e0f13; --panel:#171920; --panel2:#20232c; --text:#f2f3f5; --dim:#9aa0ab;
+  --accent:#5eead4; --accent-ink:#06201c; --line:#2a2e38;
+  --g-country:#f59e0b; --g-pop:#ec4899; --g-rock:#ef4444; --g-worship:#a78bfa;
+  --g-hiphop:#38bdf8; --g-electronic:#4ade80; --g-other:#94a3b8;
+  color-scheme:dark;
+}
+*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+html,body{margin:0;background:var(--bg);color:var(--text);font:16px/1.4 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+body{padding-bottom:calc(150px + env(safe-area-inset-bottom))}
+header{position:sticky;top:0;z-index:5;background:var(--bg);padding:calc(12px + env(safe-area-inset-top)) 16px 8px}
+.top{display:flex;align-items:center;gap:12px}
+h1{font-size:24px;margin:0;flex:1;letter-spacing:-.02em}
+.icon-btn{width:44px;height:44px;border-radius:50%;border:0;background:var(--panel2);color:var(--text);display:grid;place-items:center;font-size:18px}
+.icon-btn.mic{background:var(--accent);color:var(--accent-ink)}
+.icon-btn.mic.listening{animation:pulse 1s infinite}
+@keyframes pulse{50%{box-shadow:0 0 0 10px rgba(94,234,212,.2)}}
+.search{margin-top:10px;width:100%;height:42px;border-radius:10px;border:1px solid var(--line);background:var(--panel);color:var(--text);padding:0 12px;font-size:16px}
+.chips{display:flex;gap:8px;overflow-x:auto;padding:10px 0 4px;scrollbar-width:none}
+.chips::-webkit-scrollbar{display:none}
+.chip{flex:none;border:1px solid var(--line);background:var(--panel);color:var(--text);border-radius:999px;padding:8px 14px;font-size:14px}
+.chip[aria-pressed=true]{background:var(--c,var(--accent));color:#111;border-color:transparent;font-weight:600}
+main{padding:4px 16px}
+.section-title{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--dim);margin:18px 0 8px}
+.genre-row{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.genre-card{border:0;border-radius:14px;padding:14px;min-height:76px;text-align:left;color:#111;font-weight:700;font-size:17px;background:var(--c)}
+.genre-card small{display:block;font-weight:500;opacity:.75;font-size:13px}
+.track{display:flex;align-items:center;gap:12px;padding:10px 0;border-bottom:1px solid var(--line)}
+.art{width:46px;height:46px;border-radius:8px;flex:none;display:grid;place-items:center;font-weight:700;color:#111;background:var(--c)}
+.meta{flex:1;min-width:0}
+.meta b{display:block;font-weight:600;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.meta span{color:var(--dim);font-size:14px}
+.badge{font-size:11px;color:var(--dim);border:1px solid var(--line);border-radius:6px;padding:2px 6px}
+.track.playing .meta b{color:var(--accent)}
+.empty{color:var(--dim);padding:24px 0;text-align:center}
+.disc{background:var(--panel);border-radius:14px;padding:14px;margin-bottom:10px}
+.disc p{margin:4px 0 0;color:var(--dim);font-size:14px}
+.btn{border:0;border-radius:10px;padding:10px 14px;background:var(--panel2);color:var(--text);font-size:15px}
+.btn.primary{background:var(--accent);color:var(--accent-ink);font-weight:600}
+
+.player{position:fixed;left:8px;right:8px;bottom:calc(66px + env(safe-area-inset-bottom));background:var(--panel2);border-radius:14px;padding:8px 10px;display:flex;align-items:center;gap:10px;z-index:6}
+.player[hidden]{display:none}
+.player .meta b{font-size:15px}
+.player .bar{position:absolute;left:10px;right:10px;bottom:3px;height:2px;background:var(--line);border-radius:2px;overflow:hidden}
+.player .bar i{display:block;height:100%;width:0;background:var(--accent)}
+nav{position:fixed;left:0;right:0;bottom:0;background:var(--bg);border-top:1px solid var(--line);display:flex;padding-bottom:env(safe-area-inset-bottom);z-index:6}
+nav button{flex:1;border:0;background:none;color:var(--dim);padding:10px 0 12px;font-size:12px}
+nav button span{display:block;font-size:20px}
+nav button[aria-current=page]{color:var(--accent)}
+.toast{position:fixed;left:50%;top:calc(16px + env(safe-area-inset-top));transform:translateX(-50%);background:var(--panel2);border:1px solid var(--line);padding:10px 16px;border-radius:999px;font-size:14px;z-index:9;opacity:0;transition:opacity .2s;pointer-events:none;max-width:90vw}
+.toast.show{opacity:1}
+dialog{background:var(--panel);color:var(--text);border:1px solid var(--line);border-radius:16px;width:min(92vw,420px)}
+dialog::backdrop{background:rgba(0,0,0,.6)}
+dialog select,dialog input{width:100%;height:42px;margin:6px 0 12px;background:var(--panel2);color:var(--text);border:1px solid var(--line);border-radius:10px;padding:0 10px;font-size:16px}
+</style>
+</head>
+<body>
+<header>
+  <div class="top">
+    <h1 id="title">Library</h1>
+    <button class="icon-btn" id="importBtn" aria-label="Add songs">＋</button>
+    <button class="icon-btn mic" id="micBtn" aria-label="Voice command">🎤</button>
+  </div>
+  <input class="search" id="search" type="search" placeholder="Search songs or artists">
+  <div class="chips" id="chips"></div>
+</header>
+
+<main id="view"></main>
+
+<div class="player" id="player" hidden>
+  <div class="art" id="pArt"></div>
+  <div class="meta"><b id="pTitle"></b><span id="pArtist"></span></div>
+  <button class="icon-btn" id="prevBtn" aria-label="Previous">⏮</button>
+  <button class="icon-btn" id="playBtn" aria-label="Play/pause">▶</button>
+  <button class="icon-btn" id="nextBtn" aria-label="Next">⏭</button>
+  <div class="bar"><i id="pBar"></i></div>
+</div>
+
+<nav>
+  <button data-tab="library" aria-current="page"><span>♫</span>Library</button>
+  <button data-tab="discover"><span>✦</span>Discover</button>
+  <button data-tab="playlists"><span>☰</span>Playlists</button>
+</nav>
+
+<input type="file" id="fileIn" accept="audio/*" multiple hidden>
+<audio id="audio" preload="auto"></audio>
+<div class="toast" id="toast"></div>
+
+<dialog id="editDlg">
+  <form method="dialog">
+    <h3 style="margin-top:0">Edit song</h3>
+    <label>Title<input id="eTitle"></label>
+    <label>Artist<input id="eArtist"></label>
+    <label>Genre<select id="eGenre"></select></label>
+    <div style="display:flex;gap:8px;justify-content:flex-end">
+      <button class="btn" value="cancel">Cancel</button>
+      <button class="btn primary" value="ok">Save</button>
+    </div>
+  </form>
+</dialog>
+
+<script>
+// ---------- Data ----------
+const GENRES = [
+  {id:'country', name:'Country', c:'var(--g-country)'},
+  {id:'pop', name:'Pop', c:'var(--g-pop)'},
+  {id:'rock', name:'Rock', c:'var(--g-rock)'},
+  {id:'worship', name:'Christian / Worship', c:'var(--g-worship)'},
+  {id:'hiphop', name:'Hip-Hop', c:'var(--g-hiphop)'},
+  {id:'electronic', name:'Electronic', c:'var(--g-electronic)'},
+  {id:'other', name:'Other', c:'var(--g-other)'},
+];
+const G = Object.fromEntries(GENRES.map(g => [g.id, g]));
+
+// Your songs from Spotify (Country) + YouTube Music, built by scripts/build_library.py.
+let CATALOG = [], PLAYLISTS = [];
+const norm = s => s.toLowerCase().replace(/\s*[\(\[](feat|ft|with)[^\)\]]*[\)\]]/g,'').replace(/[^a-z0-9]/g,'');
+// Filled weekly by the Claude recommendation job (data/discover.json once wired up).
+const DISCOVER = {
+  newReleases: [{title:'New releases from artists you follow show up here', artist:'Weekly check', genre:'other'}],
+  recommended: [{title:'Recommendations based on your playlists show up here', artist:'After playlist import', genre:'other'}],
+};
+
+// ---------- Storage (IndexedDB holds the audio files on the phone) ----------
+const db = new Promise((res, rej) => {
+  const r = indexedDB.open('mymusic', 1);
+  r.onupgradeneeded = () => { r.result.createObjectStore('tracks', {keyPath:'id'}); r.result.createObjectStore('files'); };
+  r.onsuccess = () => res(r.result); r.onerror = () => rej(r.error);
+});
+const tx = async (store, mode, fn) => { const d = await db; return new Promise((res, rej) => {
+  const t = d.transaction(store, mode); const out = fn(t.objectStore(store));
+  t.oncomplete = () => res(out && out.result !== undefined ? out.result : out); t.onerror = () => rej(t.error); }); };
+const allTracks = () => tx('tracks','readonly', s => s.getAll());
+const putTrack = t => tx('tracks','readwrite', s => s.put(t));
+const putFile = (id, blob) => tx('files','readwrite', s => s.put(blob, id));
+const getFile = id => tx('files','readonly', s => s.get(id));
+
+// ---------- State ----------
+let tracks = [], tab = 'library', genre = 'all', query = '', openPl = null;
+let queue = [], qi = -1, objUrl = null;
+const $ = id => document.getElementById(id);
+const audio = $('audio');
+
+function toast(msg){ const t = $('toast'); t.textContent = msg; t.classList.add('show'); clearTimeout(toast.h); toast.h = setTimeout(() => t.classList.remove('show'), 2200); }
+const initials = s => s.split(/\s+/).slice(0,2).map(w => w[0]||'').join('').toUpperCase();
+const esc = s => String(s).replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+// ---------- Rendering ----------
+function renderChips(){
+  const list = [{id:'all', name:'All', c:'var(--accent)'}, ...GENRES];
+  $('chips').innerHTML = list.map(g => `<button class="chip" style="--c:${g.c}" data-g="${g.id}" aria-pressed="${genre===g.id}">${g.name}</button>`).join('');
+}
+function filtered(){
+  const q = query.toLowerCase();
+  return tracks.filter(t => (genre==='all' || t.genre===genre) && (!q || (t.title+' '+t.artist).toLowerCase().includes(q)));
+}
+function trackRow(t){
+  const g = G[t.genre] || G.other, playing = queue[qi] && queue[qi].id === t.id;
+  return `<div class="track${playing?' playing':''}" data-id="${t.id}">
+    <div class="art" style="--c:${g.c}">${esc(initials(t.artist))}</div>
+    <div class="meta"><b>${esc(t.title)}</b><span>${esc(t.artist)} · ${g.name}</span></div>
+    ${t.demo ? '<span class="badge">no file</span>' : `<button class="icon-btn" data-edit="${t.id}" aria-label="Edit">⋯</button>`}
+  </div>`;
+}
+function render(){
+  $('title').textContent = {library:'Library', discover:'Discover', playlists:'Playlists'}[tab];
+  document.querySelectorAll('nav button').forEach(b => b.setAttribute('aria-current', b.dataset.tab===tab ? 'page' : 'false'));
+  const v = $('view');
+  if (tab === 'library'){
+    let html = '';
+    if (genre === 'all' && !query){
+      html += `<div class="section-title">Genres</div><div class="genre-row">` + GENRES.map(g => {
+        const all = tracks.filter(t => t.genre===g.id), n = all.length, have = all.filter(t => !t.demo).length;
+        if (!n) return '';
+        return `<button class="genre-card" style="--c:${g.c}" data-play-genre="${g.id}">${g.name}<small>${n} songs · ${have} playable</small></button>`;
+      }).join('') + `</div>`;
+    }
+    const list = filtered();
+    html += `<div class="section-title">${genre==='all' ? 'All songs' : G[genre].name} · ${list.length}</div>`;
+    html += list.length ? list.map(trackRow).join('') : `<div class="empty">No songs here yet.</div>`;
+    v.innerHTML = html;
+  } else if (tab === 'discover'){
+    const card = (x, kind) => `<div class="disc"><b>${esc(x.title)}</b><p>${esc(x.artist)} · ${kind}</p></div>`;
+    v.innerHTML = `<div class="section-title">New releases</div>` + DISCOVER.newReleases.map(x => card(x,'New')).join('')
+      + `<div class="section-title">Picked for you</div>` + DISCOVER.recommended.map(x => card(x,'Recommended')).join('');
+  } else {
+    if (openPl){
+      const p = PLAYLISTS.find(p => p.name === openPl), byId = Object.fromEntries(tracks.map(t => [t.id, t]));
+      const list = p.trackIds.map(id => byId[id]).filter(Boolean);
+      v.innerHTML = `<button class="btn" data-pl-back>‹ Playlists</button><div class="section-title">${esc(p.name)} · ${list.length}</div>` + list.map(trackRow).join('');
+    } else {
+      v.innerHTML = `<div class="section-title">Your playlists</div>` + PLAYLISTS.map(p =>
+        `<div class="track" data-pl="${esc(p.name)}"><div class="art" style="--c:var(--panel2);color:var(--text)">☰</div>
+         <div class="meta"><b>${esc(p.name)}</b><span>${p.trackIds.length} songs · from ${p.source==='spotify'?'Spotify':'YouTube Music'}</span></div></div>`).join('');
+    }
+  }
+}
+
+// ---------- Playback (works with the screen off; lock-screen controls via Media Session) ----------
+async function playAt(i){
+  if (i < 0 || i >= queue.length) return;
+  qi = i; const t = queue[qi];
+  if (t.demo){ toast('No audio file for this song yet — add it with ＋'); return; }
+  const blob = await getFile(t.id);
+  if (!blob){ toast('File missing for ' + t.title); return; }
+  if (objUrl) URL.revokeObjectURL(objUrl);
+  objUrl = URL.createObjectURL(blob); audio.src = objUrl;
+  try { await audio.play(); } catch(e){ toast('Tap play to start'); }
+  updatePlayer();
+}
+function playList(list, start=0, shuffle=false){
+  const real = list.filter(t => !t.demo);
+  if (!real.length){ toast('No playable songs there yet'); return; }
+  queue = shuffle ? real.slice().sort(() => Math.random()-.5) : real;
+  playAt(shuffle ? 0 : Math.max(0, queue.findIndex(t => t.id === (list[start]||{}).id)));
+}
+function next(){ if (qi < queue.length-1) playAt(qi+1); }
+function prev(){ if (audio.currentTime > 3) audio.currentTime = 0; else if (qi > 0) playAt(qi-1); }
+function toggle(){ if (!audio.src) return playList(filtered(), 0, true); audio.paused ? audio.play() : audio.pause(); }
+function updatePlayer(){
+  const t = queue[qi]; if (!t) return;
+  const g = G[t.genre] || G.other;
+  $('player').hidden = false;
+  $('pArt').style.setProperty('--c', g.c); $('pArt').textContent = initials(t.artist);
+  $('pTitle').textContent = t.title; $('pArtist').textContent = t.artist;
+  $('playBtn').textContent = audio.paused ? '▶' : '⏸';
+  if ('mediaSession' in navigator){
+    const icon = document.querySelector('link[rel=apple-touch-icon]');
+    navigator.mediaSession.metadata = new MediaMetadata({title:t.title, artist:t.artist, album:g.name,
+      artwork: icon ? [{src:icon.href, sizes:'180x180', type:'image/png'}] : []});
+  }
+  render();
+}
+// Auto-advance must start the next song right away so the phone keeps the audio session while locked.
+audio.addEventListener('ended', () => { if (qi < queue.length-1) playAt(qi+1); else if (repeatAll && queue.length) playAt(0); });
+let repeatAll = true;
+// Ask the browser not to clear stored songs when space runs low.
+if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(()=>{});
+function updatePosition(){
+  if (!('mediaSession' in navigator) || !navigator.mediaSession.setPositionState || !isFinite(audio.duration)) return;
+  try { navigator.mediaSession.setPositionState({duration:audio.duration, position:Math.min(audio.currentTime, audio.duration), playbackRate:audio.playbackRate}); } catch(e){}
+}
+audio.addEventListener('loadedmetadata', updatePosition);
+audio.addEventListener('seeked', updatePosition);
+audio.addEventListener('play', updatePlayer);
+audio.addEventListener('pause', updatePlayer);
+audio.addEventListener('timeupdate', () => { $('pBar').style.width = (audio.duration ? audio.currentTime/audio.duration*100 : 0) + '%'; });
+if ('mediaSession' in navigator){
+  const ms = navigator.mediaSession;
+  ms.setActionHandler('play', () => audio.play());
+  ms.setActionHandler('pause', () => audio.pause());
+  ms.setActionHandler('nexttrack', next);
+  ms.setActionHandler('previoustrack', prev);
+  try { ms.setActionHandler('seekto', d => { audio.currentTime = d.seekTime; updatePosition(); }); } catch(e){}
+  try { ms.setActionHandler('stop', () => audio.pause()); } catch(e){}
+}
+audio.addEventListener('play', () => { if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'playing'; });
+audio.addEventListener('pause', () => { if ('mediaSession' in navigator) navigator.mediaSession.playbackState = 'paused'; });
+
+// ---------- Voice commands ----------
+const SR = window.SpeechRecognition || window.webkitSpeechRecognition;
+function handleCommand(raw){
+  const s = raw.toLowerCase().trim();
+  toast('“' + raw + '”');
+  if (/^(pause|stop)/.test(s)) return audio.pause();
+  if (/^(resume|play)$/.test(s)) return audio.play();
+  if (/^(next|skip)/.test(s)) return next();
+  if (/^(previous|back|go back)/.test(s)) return prev();
+  const m = s.match(/^(?:play|shuffle)\s+(?:some\s+|my\s+)?(.+?)(?:\s+music|\s+songs)?$/);
+  if (!m) return toast('Try “play country” or “play <song>”');
+  const term = m[1];
+  const g = GENRES.find(g => g.name.toLowerCase().includes(term) || g.id === term.replace(/[\s-]/g,'')
+    || (term.match(/christian|gospel|worship|religious/) && g.id==='worship'));
+  if (g) { genre = g.id; renderChips(); render(); return playList(tracks.filter(t => t.genre===g.id), 0, true); }
+  const hits = tracks.filter(t => (t.title+' '+t.artist).toLowerCase().includes(term));
+  if (hits.length) return playList(hits, 0, hits.length > 1 && hits.every(h => h.artist.toLowerCase().includes(term)));
+  toast('Couldn’t find “' + term + '”');
+}
+$('micBtn').onclick = () => {
+  if (!SR){ toast('Voice not supported in this browser — use Siri/Assistant shortcut'); return; }
+  const r = new SR(); r.lang = 'en-US'; r.interimResults = false;
+  $('micBtn').classList.add('listening');
+  r.onresult = e => handleCommand(e.results[0][0].transcript);
+  r.onend = () => $('micBtn').classList.remove('listening');
+  r.onerror = () => toast('Didn’t catch that');
+  r.start();
+};
+// Deep links let Siri Shortcuts / Google Assistant open the app with a command: index.html?cmd=play%20country
+const cmd = new URLSearchParams(location.search).get('cmd');
+
+// ---------- Import & edit ----------
+function guessGenre(name){ return 'other'; } // TODO: replace with genre map built from your playlists
+$('importBtn').onclick = () => $('fileIn').click();
+$('fileIn').onchange = async e => {
+  const files = [...e.target.files]; let n = 0, matched = 0;
+  for (const f of files){
+    const base = f.name.replace(/\.[^.]+$/, '');
+    const [artist, title] = base.includes(' - ') ? base.split(' - ', 2) : ['Unknown artist', base];
+    // Match "Artist - Title.mp3" to a song already in your library so it keeps its genre/playlists.
+    const hit = CATALOG.find(c => norm(c.title) === norm(title) && norm(c.artist).startsWith(norm(artist.split(',')[0])))
+             || CATALOG.find(c => norm(c.title) === norm(base) || norm(c.title) === norm(title));
+    const t = hit ? {id:hit.id, title:hit.title, artist:hit.artist, genre:hit.genre, added:Date.now()}
+                  : {id: crypto.randomUUID(), title:title.trim(), artist:artist.trim(), genre:guessGenre(base), added:Date.now()};
+    if (hit) matched++;
+    await putFile(t.id, f); await putTrack(t); n++;
+  }
+  await load(); toast(`Added ${n} song${n===1?'':'s'} (${matched} matched your playlists)`); e.target.value = '';
+};
+let editing = null;
+$('eGenre').innerHTML = GENRES.map(g => `<option value="${g.id}">${g.name}</option>`).join('');
+$('editDlg').addEventListener('close', async () => {
+  if ($('editDlg').returnValue !== 'ok' || !editing) return;
+  Object.assign(editing, {title:$('eTitle').value, artist:$('eArtist').value, genre:$('eGenre').value});
+  await putTrack(editing); editing = null; await load();
+});
+
+// ---------- Events ----------
+document.addEventListener('click', e => {
+  const el = e.target.closest('[data-g],[data-tab],[data-play-genre],[data-edit],[data-pl],[data-pl-back],.track');
+  if (!el) return;
+  if (el.dataset.g){ genre = el.dataset.g; renderChips(); render(); }
+  else if (el.dataset.tab){ tab = el.dataset.tab; openPl = null; render(); }
+  else if (el.dataset.pl){ openPl = el.dataset.pl; render(); }
+  else if ('plBack' in el.dataset){ openPl = null; render(); }
+  else if (el.dataset.playGenre){ playList(tracks.filter(t => t.genre===el.dataset.playGenre), 0, true); }
+  else if (el.dataset.edit){
+    editing = tracks.find(t => t.id === el.dataset.edit);
+    $('eTitle').value = editing.title; $('eArtist').value = editing.artist; $('eGenre').value = editing.genre;
+    $('editDlg').showModal();
+  } else if (el.classList.contains('track')){
+    const t = tracks.find(t => t.id === el.dataset.id);
+    if (t && t.demo) return toast('No audio file for this song yet — add it with ＋');
+    const list = filtered(); playList(list, list.findIndex(t => t.id === el.dataset.id));
+  }
+});
+$('search').oninput = e => { query = e.target.value; render(); };
+$('playBtn').onclick = toggle; $('nextBtn').onclick = next; $('prevBtn').onclick = prev;
+
+async function load(){
+  if (!CATALOG.length){
+    try {
+      const inline = document.getElementById('libdata');  // single-file build embeds the library here
+      const lib = inline ? JSON.parse(inline.textContent) : await (await fetch('data/library.json')).json();
+      CATALOG = lib.tracks; PLAYLISTS = lib.playlists;
+    } catch(e){}
+  }
+  const real = await allTracks().catch(() => []);
+  const byId = new Map(CATALOG.map(c => [c.id, {...c, demo:true}]));
+  real.forEach(t => byId.set(t.id, {...(byId.get(t.id)||{}), ...t, demo:false}));
+  tracks = [...byId.values()].sort((a,b) => a.artist.localeCompare(b.artist));
+  renderChips(); render();
+}
+load().then(() => { if (cmd) handleCommand(cmd); });
+if ('serviceWorker' in navigator && location.protocol !== 'file:') navigator.serviceWorker.register('sw.js').catch(()=>{});
+</script>
+</body>
+</html>
