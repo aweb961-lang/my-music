@@ -1,0 +1,7 @@
+name = "my-music-stream"
+main = "worker.js"
+compatibility_date = "2026-10-01"
+
+[[r2_buckets]]
+binding = "MUSIC"
+bucket_name = "my-music"

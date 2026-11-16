@@ -1,3 +1,7 @@
 dist/
+music/
+cloud/uploaded.json
+cloud/.wrangler/
+cloud/access-key.txt
 CLAUDE.md
 __pycache__/

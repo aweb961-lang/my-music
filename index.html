@@ -70,6 +70,7 @@ dialog select,dialog input{width:100%;height:42px;margin:6px 0 12px;background:v
 <header>
   <div class="top">
     <h1 id="title">Library</h1>
+    <button class="icon-btn" id="cloudBtn" aria-label="Cloud library settings">☁</button>
     <button class="icon-btn" id="importBtn" aria-label="Add songs">＋</button>
     <button class="icon-btn mic" id="micBtn" aria-label="Voice command">🎤</button>
   </div>
@@ -111,6 +112,20 @@ dialog select,dialog input{width:100%;height:42px;margin:6px 0 12px;background:v
   </form>
 </dialog>
 
+<dialog id="cloudDlg">
+  <form method="dialog" id="cloudForm">
+    <h3 style="margin-top:0">Cloud library</h3>
+    <p style="color:var(--dim);font-size:14px;margin-top:0">Stream songs from your private cloud folder. Save any of them to this phone for offline and screen-off listening.</p>
+    <label>Server address<input id="cUrl" type="url" placeholder="https://my-music-stream.example.workers.dev" autocomplete="off"></label>
+    <label>Access key<input id="cKey" type="password" autocomplete="off"></label>
+    <p id="cStatus" style="color:var(--dim);font-size:14px;min-height:1.4em"></p>
+    <div style="display:flex;gap:8px;justify-content:flex-end">
+      <button class="btn" value="cancel">Close</button>
+      <button class="btn primary" value="ok">Connect</button>
+    </div>
+  </form>
+</dialog>
+
 <script>
 // ---------- Data ----------
 const GENRES = [
@@ -126,6 +141,41 @@ const G = Object.fromEntries(GENRES.map(g => [g.id, g]));
 
 // Your songs from Spotify (Country) + YouTube Music, built by scripts/build_library.py.
 let CATALOG = [], PLAYLISTS = [];
+
+// ---------- Cloud library (private R2 bucket behind a Cloudflare Worker; see cloud/worker.js) ----------
+const store = {
+  get(k){ try { return JSON.parse(localStorage.getItem(k)); } catch(e){ return null; } },
+  set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} },
+};
+let cloud = store.get('cloud') || {url:'', key:''};
+let cloudFiles = [], cloudError = '';
+const cloudUrl = (path) => cloud.url.replace(/\/+$/, '') + path + (path.includes('?') ? '&' : '?') + 'k=' + encodeURIComponent(cloud.key);
+const streamUrl = key => cloudUrl('/file/' + encodeURIComponent(key));
+async function fetchCloudIndex(){
+  cloudError = '';
+  if (!cloud.url || !cloud.key) { cloudFiles = []; return; }
+  try {
+    const r = await fetch(cloudUrl('/index'), {cache:'no-store'});
+    if (r.status === 401) throw new Error('The access key is wrong.');
+    if (!r.ok) throw new Error('The server answered ' + r.status + '.');
+    cloudFiles = (await r.json()).files || [];
+    store.set('cloudIndex', cloudFiles);
+  } catch(e){
+    cloudError = e.message.startsWith('The ') ? e.message : 'Can’t reach the cloud library. Check the address or your connection.';
+    cloudFiles = navigator.onLine ? [] : (store.get('cloudIndex') || []);
+  }
+}
+// tracks/<library id>.mp3 -> that library song; extra/<Artist - Title>.mp3 -> a new song
+function cloudToTracks(){
+  return cloudFiles.map(f => {
+    const m = f.key.match(/^tracks\/(.+)\.[^.]+$/);
+    if (m) return {id:m[1], cloudKey:f.key, size:f.size};
+    const x = f.key.match(/^extra\/(.+)\.[^.]+$/);
+    if (!x) return null;
+    const [artist, title] = x[1].includes(' - ') ? x[1].split(' - ', 2) : ['Unknown artist', x[1]];
+    return {id:'x--' + norm(x[1]), title:title.trim(), artist:artist.trim(), genre:'other', cloudKey:f.key, size:f.size, playlists:[]};
+  }).filter(Boolean);
+}
 const norm = s => s.toLowerCase().replace(/\s*[\(\[](feat|ft|with)[^\)\]]*[\)\]]/g,'').replace(/[^a-z0-9]/g,'');
 // Filled weekly by the Claude recommendation job (data/discover.json once wired up).
 const DISCOVER = {
@@ -170,8 +220,10 @@ function trackRow(t){
   const g = G[t.genre] || G.other, playing = queue[qi] && queue[qi].id === t.id;
   return `<div class="track${playing?' playing':''}" data-id="${t.id}">
     <div class="art" style="--c:${g.c}">${esc(initials(t.artist))}</div>
-    <div class="meta"><b>${esc(t.title)}</b><span>${esc(t.artist)} · ${g.name}</span></div>
-    ${t.demo ? '<span class="badge">no file</span>' : `<button class="icon-btn" data-edit="${t.id}" aria-label="Edit">⋯</button>`}
+    <div class="meta"><b>${esc(t.title)}</b><span>${esc(t.artist)} · ${g.name}${t.where==='phone' ? ' · on phone' : t.where==='cloud' ? ' · cloud' : ''}</span></div>
+    ${t.demo ? '<span class="badge">no file</span>'
+      : t.where === 'cloud' ? `<button class="icon-btn" data-save="${t.id}" aria-label="Save to phone" title="Streams from cloud. Tap to save to phone">⤓</button>`
+      : `<button class="icon-btn" data-edit="${t.id}" aria-label="Edit">⋯</button>`}
   </div>`;
 }
 function render(){
@@ -188,7 +240,10 @@ function render(){
       }).join('') + `</div>`;
     }
     const list = filtered();
-    html += `<div class="section-title">${genre==='all' ? 'All songs' : G[genre].name} · ${list.length}</div>`;
+    if (cloudError && cloud.url) html += `<div class="disc" style="margin-top:12px"><b>Cloud library offline</b><p>${esc(cloudError)} Songs saved to this phone still play.</p></div>`;
+    const savable = list.filter(t => t.where === 'cloud');
+    html += `<div class="section-title" style="display:flex;align-items:center;gap:8px"><span style="flex:1">${genre==='all' ? 'All songs' : G[genre].name} · ${list.length}</span>`
+      + (savable.length ? `<button class="btn" data-save-all style="text-transform:none;letter-spacing:0">⤓ Save ${savable.length} to phone</button>` : '') + `</div>`;
     html += list.length ? list.map(trackRow).join('') : `<div class="empty">No songs here yet.</div>`;
     v.innerHTML = html;
   } else if (tab === 'discover'){
@@ -213,10 +268,14 @@ async function playAt(i){
   if (i < 0 || i >= queue.length) return;
   qi = i; const t = queue[qi];
   if (t.demo){ toast('No audio file for this song yet — add it with ＋'); return; }
-  const blob = await getFile(t.id);
-  if (!blob){ toast('File missing for ' + t.title); return; }
-  if (objUrl) URL.revokeObjectURL(objUrl);
-  objUrl = URL.createObjectURL(blob); audio.src = objUrl;
+  if (objUrl){ URL.revokeObjectURL(objUrl); objUrl = null; }
+  if (t.where === 'phone'){
+    const blob = await getFile(t.id);
+    if (!blob){ toast('File missing for ' + t.title); return; }
+    objUrl = URL.createObjectURL(blob); audio.src = objUrl;
+  } else {
+    audio.src = streamUrl(t.cloudKey);   // streams; the Worker supports Range so seeking works
+  }
   try { await audio.play(); } catch(e){ toast('Tap play to start'); }
   updatePlayer();
 }
@@ -253,6 +312,31 @@ function updatePosition(){
   try { navigator.mediaSession.setPositionState({duration:audio.duration, position:Math.min(audio.currentTime, audio.duration), playbackRate:audio.playbackRate}); } catch(e){}
 }
 audio.addEventListener('loadedmetadata', updatePosition);
+audio.addEventListener('error', () => {
+  const t = queue[qi]; if (!t) return;
+  toast(t.where === 'cloud' ? 'Couldn’t stream ' + t.title + '. Skipping.' : 'Couldn’t play ' + t.title + '. Skipping.');
+  setTimeout(() => { if (qi < queue.length-1) playAt(qi+1); }, 800);
+});
+
+// ---------- Save cloud songs to the phone ----------
+let saving = false;
+async function saveToPhone(list){
+  if (saving) return toast('Already saving songs…');
+  saving = true; let done = 0, failed = 0;
+  for (const t of list){
+    try {
+      toast(`Saving ${done+1} of ${list.length}: ${t.title}`);
+      const r = await fetch(streamUrl(t.cloudKey));
+      if (!r.ok) throw new Error(r.status);
+      const blob = await r.blob();
+      await putFile(t.id, blob);
+      await putTrack({id:t.id, title:t.title, artist:t.artist, genre:t.genre, added:Date.now(), cloudKey:t.cloudKey});
+      done++;
+    } catch(e){ failed++; }
+  }
+  saving = false; await load();
+  toast(`Saved ${done} song${done===1?'':'s'} to this phone` + (failed ? `, ${failed} failed` : ''));
+}
 audio.addEventListener('seeked', updatePosition);
 audio.addEventListener('play', updatePlayer);
 audio.addEventListener('pause', updatePlayer);
@@ -328,8 +412,10 @@ $('editDlg').addEventListener('close', async () => {
 
 // ---------- Events ----------
 document.addEventListener('click', e => {
-  const el = e.target.closest('[data-g],[data-tab],[data-play-genre],[data-edit],[data-pl],[data-pl-back],.track');
+  const el = e.target.closest('[data-g],[data-tab],[data-play-genre],[data-edit],[data-save],[data-save-all],[data-pl],[data-pl-back],.track');
   if (!el) return;
+  if (el.dataset.save){ const t = tracks.find(t => t.id === el.dataset.save); return t && saveToPhone([t]); }
+  if ('saveAll' in el.dataset){ return saveToPhone(filtered().filter(t => t.where === 'cloud')); }
   if (el.dataset.g){ genre = el.dataset.g; renderChips(); render(); }
   else if (el.dataset.tab){ tab = el.dataset.tab; openPl = null; render(); }
   else if (el.dataset.pl){ openPl = el.dataset.pl; render(); }
@@ -348,7 +434,7 @@ document.addEventListener('click', e => {
 $('search').oninput = e => { query = e.target.value; render(); };
 $('playBtn').onclick = toggle; $('nextBtn').onclick = next; $('prevBtn').onclick = prev;
 
-async function load(){
+async function load(refreshCloud = false){
   if (!CATALOG.length){
     try {
       const inline = document.getElementById('libdata');  // single-file build embeds the library here
@@ -356,13 +442,34 @@ async function load(){
       CATALOG = lib.tracks; PLAYLISTS = lib.playlists;
     } catch(e){}
   }
+  if (refreshCloud) await fetchCloudIndex();
   const real = await allTracks().catch(() => []);
-  const byId = new Map(CATALOG.map(c => [c.id, {...c, demo:true}]));
-  real.forEach(t => byId.set(t.id, {...(byId.get(t.id)||{}), ...t, demo:false}));
+  const byId = new Map(CATALOG.map(c => [c.id, {...c, demo:true, where:null}]));
+  // cloud songs stream; songs saved on the phone win over the cloud copy
+  cloudToTracks().forEach(t => byId.set(t.id, {...(byId.get(t.id)||{}), ...t, demo:false, where:'cloud'}));
+  real.forEach(t => byId.set(t.id, {...(byId.get(t.id)||{}), ...t, demo:false, where:'phone'}));
   tracks = [...byId.values()].sort((a,b) => a.artist.localeCompare(b.artist));
   renderChips(); render();
 }
-load().then(() => { if (cmd) handleCommand(cmd); });
+load(true).then(() => { if (cmd) handleCommand(cmd); });
+window.addEventListener('online', () => load(true));
+
+// ---------- Cloud settings dialog ----------
+$('cloudBtn').onclick = () => {
+  $('cUrl').value = cloud.url; $('cKey').value = cloud.key;
+  $('cStatus').textContent = !cloud.url ? 'Not connected.' : cloudError || `Connected · ${cloudFiles.length} songs in the cloud.`;
+  $('cloudDlg').showModal();
+};
+$('cloudForm').addEventListener('submit', async e => {
+  if (e.submitter && e.submitter.value !== 'ok') return;
+  e.preventDefault();
+  cloud = {url:$('cUrl').value.trim(), key:$('cKey').value.trim()};
+  store.set('cloud', cloud);
+  $('cStatus').textContent = 'Connecting…';
+  await load(true);
+  $('cStatus').textContent = cloudError || `Connected · ${cloudFiles.length} songs in the cloud.`;
+  if (!cloudError) setTimeout(() => $('cloudDlg').close(), 900);
+});
 if ('serviceWorker' in navigator && location.protocol !== 'file:') navigator.serviceWorker.register('sw.js').catch(()=>{});
 </script>
 </body>
