@@ -148,6 +148,15 @@ const store = {
   set(k, v){ try { localStorage.setItem(k, JSON.stringify(v)); } catch(e){} },
 };
 let cloud = store.get('cloud') || {url:'', key:''};
+// One-time setup link from the laptop (QR code): #connect=<base64 of {url,key}>. Saved, then wiped from the address bar.
+try {
+  const m = location.hash.match(/^#connect=(.+)$/);
+  if (m){
+    const c = JSON.parse(atob(decodeURIComponent(m[1])));
+    if (c.url && c.key){ cloud = {url:c.url, key:c.key}; store.set('cloud', cloud); }
+    history.replaceState(null, '', location.pathname + location.search);
+  }
+} catch(e){}
 let cloudFiles = [], cloudError = '';
 const cloudUrl = (path) => cloud.url.replace(/\/+$/, '') + path + (path.includes('?') ? '&' : '?') + 'k=' + encodeURIComponent(cloud.key);
 const streamUrl = key => cloudUrl('/file/' + encodeURIComponent(key));
@@ -457,7 +466,7 @@ window.addEventListener('online', () => load(true));
 // ---------- Cloud settings dialog ----------
 $('cloudBtn').onclick = () => {
   $('cUrl').value = cloud.url; $('cKey').value = cloud.key;
-  $('cStatus').textContent = !cloud.url ? 'Not connected.' : cloudError || `Connected · ${cloudFiles.length} songs in the cloud.`;
+  $('cStatus').textContent = !cloud.url ? 'Not connected.' : cloudError || `Connected · ${cloudFiles.length} song${cloudFiles.length===1?'':'s'} in the cloud.`;
   $('cloudDlg').showModal();
 };
 $('cloudForm').addEventListener('submit', async e => {
@@ -467,7 +476,7 @@ $('cloudForm').addEventListener('submit', async e => {
   store.set('cloud', cloud);
   $('cStatus').textContent = 'Connecting…';
   await load(true);
-  $('cStatus').textContent = cloudError || `Connected · ${cloudFiles.length} songs in the cloud.`;
+  $('cStatus').textContent = cloudError || `Connected · ${cloudFiles.length} song${cloudFiles.length===1?'':'s'} in the cloud.`;
   if (!cloudError) setTimeout(() => $('cloudDlg').close(), 900);
 });
 if ('serviceWorker' in navigator && location.protocol !== 'file:') navigator.serviceWorker.register('sw.js').catch(()=>{});

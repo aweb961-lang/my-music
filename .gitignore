@@ -2,6 +2,9 @@ dist/
 music/
 cloud/uploaded.json
 cloud/.wrangler/
+cloud/node_modules/
 cloud/access-key.txt
+cloud/worker-url.txt
+cloud/phone-setup.html
 CLAUDE.md
 __pycache__/
