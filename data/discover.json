@@ -1,0 +1,55 @@
+{
+ "updated": "Nov 18, 2026",
+ "genres": {
+  "country": [
+   {"title": "Say So", "artist": "Dan + Shay", "kind": "new", "released": "2026", "why": "Climbing Hot Country Songs this month; you already play Dan + Shay."},
+   {"title": "Dry Country", "artist": "Tyler Braden", "kind": "new", "released": "Jan 2026", "why": "Tyler Braden has 5 songs in your Country playlist."},
+   {"title": "Coal", "artist": "Dylan Gossett", "kind": "similar", "why": "Raw, newer-artist sound like Max McNown and Sam Riggs."},
+   {"title": "Pretty Little Poison", "artist": "Warren Zeiders", "kind": "similar", "why": "Gritty, big-chorus country like Tyler Braden and Graham Barham."},
+   {"title": "World on Fire", "artist": "Nate Smith", "kind": "similar", "why": "Rock-edged country in the Brantley Gilbert / Jason Aldean lane."},
+   {"title": "Fall in Love", "artist": "Bailey Zimmerman", "kind": "similar", "why": "Fits your heartbreak-ballad side (Max McNown, Tucker Wetmore)."},
+   {"title": "Buy Dirt", "artist": "Jordan Davis", "kind": "similar", "why": "Laid-back storytelling like Billy Currington and Lee Brice."},
+   {"title": "Sounds Like the Radio", "artist": "Zach Top", "kind": "similar", "why": "Throwback 90s/2000s radio country, like your Diamond Rio and Clay Walker picks."}
+  ],
+  "rock": [
+   {"title": "Safe And Sound", "artist": "Shinedown", "kind": "new", "released": "2026", "why": "From Shinedown's new album EI8HT. They're your most-played artist (10 songs)."},
+   {"title": "Searchlight", "artist": "Shinedown", "kind": "new", "released": "Nov 2025", "why": "Another EI8HT single you don't have yet."},
+   {"title": "Paint It Red", "artist": "Bad Wolves", "kind": "new", "released": "Jun 2026", "why": "First single with their new singer; you lift to Bad Wolves."},
+   {"title": "Animal I Have Become", "artist": "Three Days Grace", "kind": "similar", "why": "Classic hard-rock gym anthem in your lifting style."},
+   {"title": "Monster", "artist": "Skillet", "kind": "similar", "why": "Heavy, high-energy, and Christian rock like Thousand Foot Krutch."},
+   {"title": "Hurricane", "artist": "I Prevail", "kind": "similar", "why": "Modern post-hardcore with big hooks, near Falling In Reverse."},
+   {"title": "Trenches", "artist": "Pop Evil", "kind": "similar", "why": "Radio hard rock in the Godsmack / Shinedown lane."}
+  ],
+  "pop": [
+   {"title": "Break Up in Reverse", "artist": "Teddy Swims", "kind": "new", "released": "Jul 2026", "why": "Newest Teddy Swims single; you have Bad Dreams."},
+   {"title": "Mr. Know It All", "artist": "Teddy Swims", "kind": "new", "released": "Apr 2026", "why": "Earlier 2026 single from the same album cycle."},
+   {"title": "Hold Me in the Dark", "artist": "Myles Smith", "kind": "new", "released": "2026", "why": "From Myles Smith's debut album; you have 3 of his songs."},
+   {"title": "Need Your Love", "artist": "OneRepublic", "kind": "new", "released": "Apr 2026", "why": "New OneRepublic. They're your top pop artist."},
+   {"title": "Beautiful Things", "artist": "Benson Boone", "kind": "similar", "why": "Big anthemic vocal pop like Teddy Swims and Alex Warren."},
+   {"title": "Stick Season", "artist": "Noah Kahan", "kind": "similar", "why": "Folk-pop singalong like Mumford & Sons and The Lumineers."},
+   {"title": "Be Alright", "artist": "Dean Lewis", "kind": "similar", "why": "Emotional driving song in the Myles Smith vein."}
+  ],
+  "worship": [
+   {"title": "That's Who I Praise", "artist": "Brandon Lake", "kind": "new", "released": "2026", "why": "A No. 1 Christian streaming song this year."},
+   {"title": "Dusty Bibles", "artist": "Josiah Queen", "kind": "new", "released": "2026", "why": "New Josiah Queen; you have The Prodigal and demons."},
+   {"title": "Goodbye Yesterday", "artist": "Elevation Rhythm, Gracie Binion", "kind": "new", "released": "2026", "why": "Elevation Rhythm, who did WASHED in your playlist."},
+   {"title": "God I'm Just Grateful", "artist": "Elevation Worship, Chandler Moore", "kind": "new", "released": "2026", "why": "Hit No. 1 on Hot Christian Songs this year."},
+   {"title": "When A Cowboy Prays", "artist": "Brandon Lake", "kind": "new", "released": "2026", "why": "Country-leaning worship, a bridge to your Country side (like Josh Turner's I Saw The Light)."},
+   {"title": "Your Way's Better", "artist": "Forrest Frank", "kind": "similar", "why": "Upbeat acoustic worship close to Josiah Queen's sound."},
+   {"title": "Firm Foundation (He Won't)", "artist": "Cody Carnes", "kind": "similar", "why": "Congregational worship like Passion and The Belonging Co."},
+   {"title": "My Jesus", "artist": "Anne Wilson", "kind": "similar", "why": "Country-tinged worship, fits with Rend Collective and Chris Tomlin."}
+  ],
+  "hiphop": [
+   {"title": "The Search", "artist": "NF", "kind": "similar", "why": "Intense, introspective rap like Ryan Caraveo and Vin Jay."},
+   {"title": "Spinnin", "artist": "Connor Price, Bens", "kind": "similar", "why": "Connor Price is in your playlists; this is one of his biggest."},
+   {"title": "Grateful", "artist": "NEFFEX", "kind": "similar", "why": "Motivational gym rap like Born a Rockstar."},
+   {"title": "Lucid Dreams", "artist": "Juice WRLD", "kind": "similar", "why": "Melodic rap; you have Come & Go."}
+  ],
+  "electronic": [
+   {"title": "Faded", "artist": "Alan Walker", "kind": "similar", "why": "Alan Walker's signature song; you run to The Spectre and Darkside."},
+   {"title": "Wake Me Up", "artist": "Avicii", "kind": "similar", "why": "Melodic, singalong EDM like Don't You Worry Child."},
+   {"title": "Scared to Be Lonely", "artist": "Martin Garrix, Dua Lipa", "kind": "similar", "why": "Vocal EDM for running, like Nevada and Ignite."},
+   {"title": "Higher Love", "artist": "Kygo, Whitney Houston", "kind": "similar", "why": "Kygo is in your driving playlist (Chasing Paradise)."}
+  ]
+ }
+}

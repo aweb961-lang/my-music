@@ -186,11 +186,26 @@ function cloudToTracks(){
   }).filter(Boolean);
 }
 const norm = s => s.toLowerCase().replace(/\s*[\(\[](feat|ft|with)[^\)\]]*[\)\]]/g,'').replace(/[^a-z0-9]/g,'');
-// Filled weekly by the Claude recommendation job (data/discover.json once wired up).
-const DISCOVER = {
-  newReleases: [{title:'New releases from artists you follow show up here', artist:'Weekly check', genre:'other'}],
-  recommended: [{title:'Recommendations based on your playlists show up here', artist:'After playlist import', genre:'other'}],
-};
+// Weekly genre-locked picks written by Claude to data/discover.json (see scripts/ and the weekly task).
+let DISCOVER = null;
+async function loadDiscover(){
+  try { DISCOVER = await (await fetch('data/discover.json', {cache:'no-store'})).json(); } catch(e){ DISCOVER = null; }
+}
+
+// ---------- Freshness rotation ----------
+// Remembers when each song last played on this device, so shuffles favor songs you haven't heard lately
+// instead of looping the same handful. Weighted shuffle (Efraimidis-Spirakis): key = rand^(1/weight).
+const plays = store.get('plays') || {};
+function notePlay(id){ const p = plays[id] || {n:0}; p.n++; p.last = Date.now(); plays[id] = p; store.set('plays', plays); }
+function freshWeight(t){
+  const p = plays[t.id]; if (!p) return 40;                       // never played here: strongly favored
+  const days = (Date.now() - p.last) / 864e5;
+  if (days < 0.5) return 0.05;                                    // played in the last 12 hours: almost never
+  return Math.min(1 + days * 2, 35) / Math.sqrt(p.n);             // older = more likely; heavy rotation = less
+}
+function freshShuffle(list){
+  return list.map(t => ({t, k: Math.pow(Math.random(), 1 / freshWeight(t))})).sort((a, b) => b.k - a.k).map(x => x.t);
+}
 
 // ---------- Storage (IndexedDB holds the audio files on the phone) ----------
 const db = new Promise((res, rej) => {
@@ -256,9 +271,26 @@ function render(){
     html += list.length ? list.map(trackRow).join('') : `<div class="empty">No songs here yet.</div>`;
     v.innerHTML = html;
   } else if (tab === 'discover'){
-    const card = (x, kind) => `<div class="disc"><b>${esc(x.title)}</b><p>${esc(x.artist)} · ${kind}</p></div>`;
-    v.innerHTML = `<div class="section-title">New releases</div>` + DISCOVER.newReleases.map(x => card(x,'New')).join('')
-      + `<div class="section-title">Picked for you</div>` + DISCOVER.recommended.map(x => card(x,'Recommended')).join('');
+    if (!DISCOVER){ v.innerHTML = `<div class="empty">This week's picks haven't loaded. Check your connection.</div>`; return; }
+    const have = new Set(tracks.map(t => norm(t.artist.split(',')[0]) + '|' + norm(t.title)));
+    const gens = genre === 'all' ? GENRES.map(g => g.id) : [genre];
+    let html = `<p style="color:var(--dim);font-size:14px;margin:12px 0 0">Picked ${esc(DISCOVER.updated)} from your playlists. Each genre only gets songs from that genre.</p>`;
+    for (const gid of gens){
+      const items = (DISCOVER.genres && DISCOVER.genres[gid]) || [];
+      if (!items.length) continue;
+      html += `<div class="section-title">${G[gid].name}</div>` + items.map(x => {
+        const owned = have.has(norm(x.artist.split(',')[0]) + '|' + norm(x.title));
+        const q = encodeURIComponent(x.artist + ' ' + x.title);
+        return `<div class="disc" style="border-left:4px solid ${G[gid].c}">
+          <div style="display:flex;gap:8px;align-items:baseline"><b style="flex:1">${esc(x.title)}</b>
+            <span class="badge">${x.kind === 'new' ? 'New' + (x.released ? ' · ' + esc(x.released) : '') : 'Similar'}</span></div>
+          <p>${esc(x.artist)}${owned ? ' · in your library' : ''}</p>
+          <p>${esc(x.why || '')}</p>
+          <p><a href="https://music.youtube.com/search?q=${q}" target="_blank" rel="noopener" style="color:var(--accent)">Preview on YouTube Music ↗</a></p>
+        </div>`;
+      }).join('');
+    }
+    v.innerHTML = html;
   } else {
     if (openPl){
       const p = PLAYLISTS.find(p => p.name === openPl), byId = Object.fromEntries(tracks.map(t => [t.id, t]));
@@ -285,16 +317,29 @@ async function playAt(i){
   } else {
     audio.src = streamUrl(t.cloudKey);   // streams; the Worker supports Range so seeking works
   }
+  notePlay(t.id);
   try { await audio.play(); } catch(e){ toast('Tap play to start'); }
   updatePlayer();
 }
+// Genre radio: a shuffled genre (or any shuffle) refills itself from the same pool when it runs out,
+// so it never wanders into another genre and keeps favoring songs you haven't heard lately.
+let radioPool = null;
 function playList(list, start=0, shuffle=false){
   const real = list.filter(t => !t.demo);
   if (!real.length){ toast('No playable songs there yet'); return; }
-  queue = shuffle ? real.slice().sort(() => Math.random()-.5) : real;
+  radioPool = shuffle ? real : null;
+  queue = shuffle ? freshShuffle(real) : real;
   playAt(shuffle ? 0 : Math.max(0, queue.findIndex(t => t.id === (list[start]||{}).id)));
 }
-function next(){ if (qi < queue.length-1) playAt(qi+1); }
+function refillRadio(){
+  if (!radioPool) return false;
+  const recent = new Set(queue.slice(-Math.min(20, Math.floor(radioPool.length / 2))).map(t => t.id));
+  const more = freshShuffle(radioPool.filter(t => !recent.has(t.id)));
+  if (!more.length) return false;
+  queue = queue.concat(more);
+  return true;
+}
+function next(){ if (qi < queue.length-1 || refillRadio()) playAt(qi+1); }
 function prev(){ if (audio.currentTime > 3) audio.currentTime = 0; else if (qi > 0) playAt(qi-1); }
 function toggle(){ if (!audio.src) return playList(filtered(), 0, true); audio.paused ? audio.play() : audio.pause(); }
 function updatePlayer(){
@@ -312,7 +357,7 @@ function updatePlayer(){
   render();
 }
 // Auto-advance must start the next song right away so the phone keeps the audio session while locked.
-audio.addEventListener('ended', () => { if (qi < queue.length-1) playAt(qi+1); else if (repeatAll && queue.length) playAt(0); });
+audio.addEventListener('ended', () => { if (qi < queue.length-1 || refillRadio()) playAt(qi+1); else if (repeatAll && queue.length) playAt(0); });
 let repeatAll = true;
 // Ask the browser not to clear stored songs when space runs low.
 if (navigator.storage && navigator.storage.persist) navigator.storage.persist().catch(()=>{});
@@ -461,6 +506,7 @@ async function load(refreshCloud = false){
   renderChips(); render();
 }
 load(true).then(() => { if (cmd) handleCommand(cmd); });
+loadDiscover().then(() => { if (tab === 'discover') render(); });
 window.addEventListener('online', () => load(true));
 
 // ---------- Cloud settings dialog ----------
